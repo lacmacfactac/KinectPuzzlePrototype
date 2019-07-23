@@ -1,0 +1,45 @@
+nev@szulo az elnevezés rendje
+
+Minden alábbi elem közös forgásponttal kell, hogy rendelkezzen.
+
+Legyen egy empty, ami minden egyes puzzle slot gyökere lesz, ezek fognak mindent tartalmazni. A nevük lehet pl Slot_A, Slot_B, Slot_C.
+
+Minden slot-ban legyen elhelyezve egy egységméret? kocka, ami a játékban láthatatlan lesz, csak arra használom, hogy a markolást érzékelje. Ezt a script a hozzátartozó slot-hoz fogja parentelni. A neve lehet pl Collider_A@Slot_A
+
+Legyen elhelyezve egy újabb empty, ez fogja az egész elemet ténylegesen forgatni. A neve lehet pl Origin_A@Slot_A
+
+Blenderben parentelni csak a következ?ket kell:
+Minden puzzle elem legyen egy akkora kockába belerakva, ami teljesen befoglalja. Ezeket fogja a script 90 fokonként elforgatni az aktuális origin-en belül. A neve lehet pl Lego@Origin_A, Western@Origin_A
+
+Ami a blenderben így néz ki:
+
+Slot_A 					(empty)
+Collider_A@Slot_A 			(egység kocka)
+Origin_A@Slot_A 			(empty)
+Lego@Origin_A 				(változó kocka)
+	|
+	|_ Lego_Suzanne			(mesh)
+	|_ Lego_Starter_cube		(mesh)
+Western@Origin_A 			(változó kocka)
+	|
+	|_ Western_Suzanne		(mesh)
+	|_ Western_Starter_cube	(mesh)	
+
+
+
+Az Unityben ilyen lesz:	
+
+Slot_A
+	|
+	|_ Collider_A
+	|_ Origin_A
+		|
+		|_ Lego
+		|	|
+		|	|_ Lego_Suzanne
+		|	|_ Lego_Starter_cube
+		|
+		|_ Western
+			|
+			|_ Western_Suzanne
+			|_ Western_Starter_cube
