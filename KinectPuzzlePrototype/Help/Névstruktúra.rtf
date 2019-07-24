@@ -9,18 +9,18 @@ Minden slot-ban legyen elhelyezve egy egységméret? kocka, ami a játékban láthata
 Legyen elhelyezve egy újabb empty, ez fogja az egész elemet ténylegesen forgatni. A neve lehet pl Origin_A@Slot_A
 
 Blenderben parentelni csak a következ?ket kell:
-Minden puzzle elem legyen egy akkora kockába belerakva, ami teljesen befoglalja. Ezeket fogja a script 90 fokonként elforgatni az aktuális origin-en belül. A neve lehet pl Lego@Origin_A, Western@Origin_A
+Minden puzzle elem legyen egy akkora kockába belerakva, ami teljesen befoglalja. Ezeket fogja a script 90 fokonként elforgatni az aktuális origin-en belül. A neve lehet pl Element_Lego@Origin_A, Element_Western@Origin_A
 
 Ami a blenderben így néz ki:
 
 Slot_A 					(empty)
 Collider_A@Slot_A 			(egység kocka)
 Origin_A@Slot_A 			(empty)
-Lego@Origin_A 				(változó kocka)
+Element_Lego@Origin_A			(változó kocka)
 	|
 	|_ Lego_Suzanne			(mesh)
 	|_ Lego_Starter_cube		(mesh)
-Western@Origin_A 			(változó kocka)
+Element_Western@Origin_A 			(változó kocka)
 	|
 	|_ Western_Suzanne		(mesh)
 	|_ Western_Starter_cube	(mesh)	
@@ -34,12 +34,12 @@ Slot_A
 	|_ Collider_A
 	|_ Origin_A
 		|
-		|_ Lego
+		|_ Element_Lego
 		|	|
 		|	|_ Lego_Suzanne
 		|	|_ Lego_Starter_cube
 		|
-		|_ Western
+		|_ Element_Western
 			|
 			|_ Western_Suzanne
 			|_ Western_Starter_cube

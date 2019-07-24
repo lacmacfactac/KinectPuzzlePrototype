@@ -12,7 +12,7 @@ public class GameLogic : MonoBehaviour
     GameObject puzzle;
     SolutionHandler solutionHandler;
     public bool waitingForReset = false;
-    
+
     // Start is called before the first frame update
     void Start()
     {
@@ -25,34 +25,39 @@ public class GameLogic : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (!waitingForReset) { 
-        correctSolution = true;
-        for (int i = 0; i < puzzleSockets.Length; i++)
+        if (!waitingForReset)
         {
-            int next = (i + 1) % puzzleSockets.Length;
-            if (puzzleSockets[i].GetComponent<Mover>().GetState() == -1 || puzzleSockets[i].GetComponent<Mover>().GetState() != puzzleSockets[next].GetComponent<Mover>().GetState())
+            correctSolution = true;
+            Debug.Log(puzzleSockets.Length);
+            for (int i = 0; i < puzzleSockets.Length; i++)
             {
-                correctSolution = false;
-                continue;
+                int next = (i + 1) % puzzleSockets.Length;
+                if (puzzleSockets[i].GetComponent<Mover>().GetState() == -1 ||
+                    puzzleSockets[i].GetComponent<Mover>().GetState() != puzzleSockets[next].GetComponent<Mover>().GetState())
+                {
+                    correctSolution = false;
+                    continue;
+                }
+                else
+                {
+                    solutionIndex = puzzleSockets[i].GetComponent<Mover>().GetState();
+                }
             }
-            else {
-               solutionIndex = puzzleSockets[i].GetComponent<Mover>().GetState();
-            }
-        }
 
-        if (correctSolution)
-        {
+            if (correctSolution)
+            {
                 waitingForReset = true;
                 solutionHandler.Solve(solutionIndex);
-        }
+            }
         }
     }
 
     public void Scramble()
     {
         Debug.Log("Scrambling");
-        foreach (GameObject g in puzzleSockets) {
-            g.GetComponent<Mover>().Set((int)(Random.value*solutions.Length));
+        foreach (GameObject g in puzzleSockets)
+        {
+            g.GetComponent<Mover>().Set((int)(Random.value * solutions.Length));
         }
     }
 

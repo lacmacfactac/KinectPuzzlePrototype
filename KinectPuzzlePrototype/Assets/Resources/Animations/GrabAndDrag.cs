@@ -42,7 +42,7 @@ public class GrabAndDrag : MonoBehaviour
 
         if (grabbedObject != null) {
             dragValue = Input.mousePosition.x - startPos.x;
-            moverScript.Drag(dragValue, .01f);
+            moverScript.Drag(dragValue, .01f, gameObject);
         }
 
     }

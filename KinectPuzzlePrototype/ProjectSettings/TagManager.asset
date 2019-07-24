@@ -10,6 +10,7 @@ TagManager:
   - Complete
   - Solution
   - Puzzle
+  - Slot
   layers:
   - Default
   - TransparentFX

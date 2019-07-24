@@ -14,13 +14,21 @@ public class ComponentAdder : MonoBehaviour
 
         foreach (GameObject g in GameObject.FindGameObjectsWithTag("Origin"))
         {
-            g.transform.parent.GetComponent<MeshRenderer>().enabled = false;
-            g.AddComponent<MeshCollider>().sharedMesh = g.transform.parent.GetComponent<MeshFilter>().sharedMesh;
+            GameObject colliderMeshSource = null;
+            foreach (GameObject source in GameObject.FindGameObjectsWithTag("Collider")) {
+                if (source.transform.parent == transform.parent) {
+                    colliderMeshSource = source;
+                }
+            }
+
+            colliderMeshSource.GetComponent<MeshRenderer>().enabled = false;
+            g.AddComponent<MeshCollider>().sharedMesh = colliderMeshSource.GetComponent<MeshFilter>().sharedMesh;
             g.AddComponent<Animator>().runtimeAnimatorController = animator;
             g.AddComponent<Mover>();
         }
 
-        GameObject.Find("Solution").AddComponent<SolutionHandler>();
+        Debug.Log("Origins: " + GameObject.FindGameObjectsWithTag("Origin").Length);
+        //GameObject.Find("Solution").AddComponent<SolutionHandler>();
     }
 
     // Update is called once per frame

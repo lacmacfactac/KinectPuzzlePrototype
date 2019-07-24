@@ -96,15 +96,25 @@ public class CamAdjust : MonoBehaviour
             changed = true;
             param.pos += new Vector3(0, -stepSize, 0);
         }
-        if (Input.GetKeyDown(KeyCode.Q))
+        if (Input.GetKeyDown(KeyCode.LeftArrow))
         {
             changed = true;
             param.rot.eulerAngles += new Vector3(0, -stepSize, 0);
         }
-        if (Input.GetKeyDown(KeyCode.E))
+        if (Input.GetKeyDown(KeyCode.RightArrow))
         {
             changed = true;
             param.rot.eulerAngles += new Vector3(0, stepSize, 0);
+        }
+        if (Input.GetKeyDown(KeyCode.UpArrow))
+        {
+            changed = true;
+            param.rot.eulerAngles += new Vector3(stepSize,0, 0);
+        }
+        if (Input.GetKeyDown(KeyCode.DownArrow))
+        {
+            changed = true;
+            param.rot.eulerAngles += new Vector3(-stepSize,0, 0);
         }
         if (Input.GetKeyDown(KeyCode.Z))
         {
@@ -150,11 +160,25 @@ public class CamAdjust : MonoBehaviour
         if (Time.time < printUntil)
         {
             Rect posDataArea = new Rect(Screen.width / 2 - 250, Screen.height / 2 - 100, 200, 500);
-            string data = "Pos: " + param.pos.ToString() + " [a-d w-s r-f]\n" +
-                "Rot: " + param.rot.eulerAngles.ToString() + " [q-e]\n" +
-                "Focal l: " + param.focal.ToString() + " [z-h]\n" +
-                "Stepsize: " + Mathf.Pow(10, param.stepSizePower).ToString() + " [t-g]\n" +
-                "Load/Save: [i-o]";
+            string data =
+                "   [W]   [R]\n" +
+                "[A][S][D][F]\n" +
+                "Pos: " + param.pos.ToString() + "\n" +
+                "\n" +
+                "   [^]   \n" +
+                "[<][ˇ][>]\n" +
+                "Rot: " + param.rot.eulerAngles.ToString() + "\n" +
+                "\n" +
+                "[Z]\n" +
+                "[H]\n" +
+                "Focal l: " + param.focal.ToString() + "\n" +
+                "\n" +
+                "[T]\n" +
+                "[G]\n" +
+                "Stepsize: " + Mathf.Pow(10, param.stepSizePower).ToString() + "\n" +
+                "\n" +
+                "[I][O]\n" +
+                "Load/Save";
             GUI.Label(posDataArea, data);
         }
     }

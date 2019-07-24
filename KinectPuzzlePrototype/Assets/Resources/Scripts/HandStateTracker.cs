@@ -69,23 +69,21 @@ public class HandStateTracker : MonoBehaviour
     void Update()
     {
         Vector3 screenPoint = Camera.main.WorldToScreenPoint(transform.position);
+        Ray ray = Camera.main.ScreenPointToRay(screenPoint);
+        RaycastHit hit;
+        bool rayHit = Physics.Raycast(ray, out hit, 100.0f);
 
         if (grabFlag)
         {
             grabHand.SetActive(true);
             trackHand.SetActive(false);
             grabFlag = false;
-            RaycastHit hit;
-            Ray ray = Camera.main.ScreenPointToRay(screenPoint);
-            if (Physics.Raycast(ray, out hit, 100.0f))
+            if (rayHit && hit.transform != null && hit.transform.GetComponent<Mover>() != null && hit.transform.GetComponent<Mover>().grabber == null)
             {
-                if (hit.transform != null && hit.transform.GetComponent<Mover>() != null && hit.transform.GetComponent<Mover>().grabber == null)
-                {
-                    grabbedObject = hit.transform.gameObject;
-                    moverScript = hit.transform.GetComponent<Mover>();
-                    moverScript.Grab(gameObject);
-                    startPos = screenPoint;
-                }
+                grabbedObject = hit.transform.gameObject;
+                moverScript = hit.transform.GetComponent<Mover>();
+                moverScript.Grab(gameObject);
+                startPos = screenPoint;
             }
         }
         if (releaseFlag)
@@ -104,7 +102,7 @@ public class HandStateTracker : MonoBehaviour
         {
             dragValue = screenPoint.x - startPos.x;
             if (moverScript.grabber = gameObject) {
-                moverScript.Drag(dragValue, .01f);
+                moverScript.Drag(dragValue, .01f, gameObject);
             }
             }
 
