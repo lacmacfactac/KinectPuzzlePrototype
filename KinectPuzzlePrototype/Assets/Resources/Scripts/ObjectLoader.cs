@@ -10,6 +10,7 @@ public class ObjectLoader : MonoBehaviour
     private void Awake()
     {
         loadedObject = UniGLTF.gltfImporter.Load("Assets/Resources/Objects/template.glb").Root;
+        loadedObject.transform.parent = transform;
             
             }
     void Start()

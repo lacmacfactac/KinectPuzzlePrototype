@@ -31,8 +31,6 @@ public class HandStateTracker : MonoBehaviour
             switch (state)
             {
                 case Kinect.HandState.Closed:
-                    grabHand.SetActive(true);
-                    trackHand.SetActive(false);
                     if (flipFlop){
                         grabFlag = true;
                         flipFlop = false;
@@ -40,8 +38,6 @@ public class HandStateTracker : MonoBehaviour
 
                     break;
                 case Kinect.HandState.Open:
-                    grabHand.SetActive(false);
-                    trackHand.SetActive(true);
                     if (!flipFlop) {
                         releaseFlag = true;
                         flipFlop = true;
@@ -50,8 +46,6 @@ public class HandStateTracker : MonoBehaviour
                 default:
                     flipFlop = true;
                     releaseFlag = true;
-                    grabHand.SetActive(false);
-                    trackHand.SetActive(false);
                     break;
 
             }
@@ -78,21 +72,26 @@ public class HandStateTracker : MonoBehaviour
 
         if (grabFlag)
         {
+            grabHand.SetActive(true);
+            trackHand.SetActive(false);
             grabFlag = false;
             RaycastHit hit;
             Ray ray = Camera.main.ScreenPointToRay(screenPoint);
             if (Physics.Raycast(ray, out hit, 100.0f))
             {
-                if (hit.transform != null && hit.transform.GetComponent<Mover>() != null)
+                if (hit.transform != null && hit.transform.GetComponent<Mover>() != null && hit.transform.GetComponent<Mover>().grabber == null)
                 {
                     grabbedObject = hit.transform.gameObject;
                     moverScript = hit.transform.GetComponent<Mover>();
+                    moverScript.Grab(gameObject);
                     startPos = screenPoint;
                 }
             }
         }
         if (releaseFlag)
         {
+            grabHand.SetActive(false);
+            trackHand.SetActive(true);
             releaseFlag = false;
             if (moverScript != null)
             {
@@ -104,8 +103,10 @@ public class HandStateTracker : MonoBehaviour
         if (grabbedObject != null)
         {
             dragValue = screenPoint.x - startPos.x;
-            moverScript.Drag(dragValue, .01f);
-        }
+            if (moverScript.grabber = gameObject) {
+                moverScript.Drag(dragValue, .01f);
+            }
+            }
 
     }
 }

@@ -23,10 +23,11 @@ public class GrabAndDrag : MonoBehaviour
             Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
             if (Physics.Raycast(ray, out hit, 100.0f))
             {
-                if (hit.transform != null && hit.transform.GetComponent<Mover>() != null)
+                if (hit.transform != null && hit.transform.GetComponent<Mover>() != null && hit.transform.GetComponent<Mover>().grabber == null)
                 {
                     grabbedObject = hit.transform.gameObject;
                     moverScript = hit.transform.GetComponent<Mover>();
+                    moverScript.grabber = transform.gameObject;
                     startPos = Input.mousePosition;
                 }
             }

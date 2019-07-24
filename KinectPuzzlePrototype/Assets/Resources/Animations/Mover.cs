@@ -18,6 +18,7 @@ public class Mover : MonoBehaviour
     int temporaryState;
     bool settled = false;
     bool scrambling = false;
+    public GameObject grabber;
 
 
     // Start is called before the first frame update
@@ -89,6 +90,20 @@ public class Mover : MonoBehaviour
                 children[wrappedState].gameObject.SetActive(false);
             }
         }
+
+        if (grabber != null)
+        {
+            transform.localScale = new Vector3(.8f, .8f, .8f);
+        }
+        else
+        {
+            transform.localScale = Vector3.one;
+
+        }
+    }
+
+    public void Grab(GameObject grabberObject) {
+        grabber = grabberObject;
     }
 
     public void Drag(float val, float scale)
@@ -104,6 +119,7 @@ public class Mover : MonoBehaviour
         phase += deltaPhase;
         targetPhase = Mathf.Round(phase);
         deltaPhase = 0;
+        grabber = null;
     }
     public void Set(int s)
     {
