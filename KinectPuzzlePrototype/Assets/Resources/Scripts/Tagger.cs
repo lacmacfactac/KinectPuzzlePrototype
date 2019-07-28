@@ -95,6 +95,9 @@ public class Tagger : MonoBehaviour
         foreach(GameObject g in GameObject.FindGameObjectsWithTag("Origin"))
         {
             g.AddComponent<Mover>();
+
+            GameObject colliderMeshSource = g.transform.parent.gameObject;
+            /*
             GameObject colliderMeshSource = null;
             foreach (GameObject source in GameObject.FindGameObjectsWithTag("Collider"))
             {
@@ -105,7 +108,7 @@ public class Tagger : MonoBehaviour
                     Debug.Log("Collider found at " + source.name);
                 }
             }
-
+            */
             colliderMeshSource.GetComponent<MeshRenderer>().enabled = false;
             g.AddComponent<MeshCollider>().sharedMesh = colliderMeshSource.GetComponent<MeshFilter>().sharedMesh;
             g.AddComponent<Animator>().runtimeAnimatorController = animator;
