@@ -14,13 +14,15 @@ public class SolutionHandler : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        solutions = GameObject.FindGameObjectsWithTag("Complete");
+        //solutions = GameObject.FindGameObjectsWithTag("Complete");
         gameLogic = GameObject.FindObjectOfType<GameLogic>();
-        puzzle = GameObject.FindGameObjectWithTag ("Puzzle");
+        //puzzle = GameObject.FindGameObjectWithTag ("Puzzle");
+        /*
         foreach (GameObject g in solutions)
         {
             g.SetActive(false);
         }
+        */
 
     }
 
@@ -40,18 +42,18 @@ public class SolutionHandler : MonoBehaviour
     public void Solve(int index)
     {
         Debug.Log("Solving for " + index);
-        solutionIndex = solutions.Length-1-index;
+        //solutionIndex = solutions.Length-1-index;
         toggle = true;
         startTime = Time.time;
-        solutions[solutionIndex].SetActive(true);
-        puzzle.SetActive(false);
+        //solutions[solutionIndex].SetActive(true);
+        //puzzle.SetActive(false);
     }
 
     public void Unsolve()
     {
         Debug.Log("Finished solution anim");
-        puzzle.SetActive(true);
-        solutions[solutionIndex].SetActive(false);
+        //puzzle.SetActive(true);
+        //solutions[solutionIndex].SetActive(false);
         gameLogic.Reset();
     }
 }

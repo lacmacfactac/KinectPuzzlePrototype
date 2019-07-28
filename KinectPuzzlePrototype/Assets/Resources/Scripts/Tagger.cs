@@ -96,7 +96,7 @@ public class Tagger : MonoBehaviour
         {
             g.AddComponent<Mover>();
 
-            GameObject colliderMeshSource = g.transform.parent.gameObject;
+            GameObject colliderMeshSource = GameObject.Find(g.GetComponent<ObjectCategory>().parentName);
             /*
             GameObject colliderMeshSource = null;
             foreach (GameObject source in GameObject.FindGameObjectsWithTag("Collider"))
@@ -112,6 +112,7 @@ public class Tagger : MonoBehaviour
             colliderMeshSource.GetComponent<MeshRenderer>().enabled = false;
             g.AddComponent<MeshCollider>().sharedMesh = colliderMeshSource.GetComponent<MeshFilter>().sharedMesh;
             g.AddComponent<Animator>().runtimeAnimatorController = animator;
+            g.layer = LayerMask.NameToLayer("KinectTouchable");
         }
 
         foreach (GameObject g in GameObject.FindGameObjectsWithTag("Element"))

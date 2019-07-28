@@ -90,7 +90,7 @@ public class Mover : MonoBehaviour
             */
             //??????
             // was 4 before ˇˇˇˇˇˇˇˇ
-            if (i < 4)
+            if (i < stateCount)
             {
                 if (i == 1 || grabber != null || !settled)
                 {
@@ -122,9 +122,8 @@ public class Mover : MonoBehaviour
                 }
             }
         }
-
-        externalScaleModifier = Mathf.Lerp(externalScaleModifier, 1, Time.deltaTime);
-        float localScaleSetpoint = Mathf.Min(externalScaleModifier, scaleSetpoint);
+        
+        float localScaleSetpoint = scaleSetpoint;
         transform.localScale = Vector3.Lerp(transform.localScale, Vector3.one*localScaleSetpoint, Time.deltaTime*5);
         /*
         if (grabber != null)
@@ -173,6 +172,15 @@ public class Mover : MonoBehaviour
     }
     public void Set(int s)
     {
+        Debug.Log("Jumpig to state " + s);
+        grabbed = false;
+        settled = false;
+        targetPhase = phase + (s - (phase % stateCount));
+
+    }
+    public void SetToRandom()
+    {
+        int s = (int)(Random.value * stateCount);
         Debug.Log("Jumpig to state " + s);
         grabbed = false;
         settled = false;

@@ -12,6 +12,7 @@ public class GameLogic : MonoBehaviour
     GameObject puzzle;
     SolutionHandler solutionHandler;
     public bool waitingForReset = false;
+    bool firstRun = true;
 
     // Start is called before the first frame update
     void Start()
@@ -25,10 +26,13 @@ public class GameLogic : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (firstRun) {
+            firstRun = false;
+            Scramble();
+        }
         if (!waitingForReset)
         {
             correctSolution = true;
-            Debug.Log(puzzleSockets.Length);
             for (int i = 0; i < puzzleSockets.Length; i++)
             {
                 int next = (i + 1) % puzzleSockets.Length;
@@ -57,7 +61,7 @@ public class GameLogic : MonoBehaviour
         Debug.Log("Scrambling");
         foreach (GameObject g in puzzleSockets)
         {
-            g.GetComponent<Mover>().Set((int)(Random.value * solutions.Length));
+            g.GetComponent<Mover>().SetToRandom();
         }
     }
 

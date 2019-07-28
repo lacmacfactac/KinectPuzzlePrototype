@@ -5,6 +5,7 @@ using Kinect = Windows.Kinect;
 
 public class HandStateTracker : MonoBehaviour
 {
+    public bool mockHand = false;
     GameObject grabHand;
     GameObject trackHand;
     private Kinect.HandState state = Kinect.HandState.Unknown;
@@ -71,7 +72,19 @@ public class HandStateTracker : MonoBehaviour
         Vector3 screenPoint = Camera.main.WorldToScreenPoint(transform.position);
         Ray ray = Camera.main.ScreenPointToRay(screenPoint);
         RaycastHit hit;
-        bool rayHit = Physics.Raycast(ray, out hit, 100.0f);
+        bool rayHit = Physics.Raycast(ray, out hit, 100.0f, 1<<LayerMask.NameToLayer("KinectTouchable"));
+
+        if (mockHand) {
+            if (Input.GetKeyDown(KeyCode.Mouse0))
+            {
+                State = Kinect.HandState.Closed;
+            }
+
+            if (Input.GetKeyUp(KeyCode.Mouse0))
+            {
+                State = Kinect.HandState.Open;
+            }
+        }
 
         if (grabFlag)
         {

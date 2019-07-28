@@ -202,7 +202,47 @@ ModelImporter:
     4300048: Cube.053
     4300050: Cube.063
     4300052: Cube.251
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: palace glass
+    second: {fileID: 2100000, guid: e2ed299bddb8881499fd5ad0eb027c99, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: palace gold
+    second: {fileID: 2100000, guid: aa250a61dbd34c447a7a5d0cf859e422, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: palace marble
+    second: {fileID: 2100000, guid: 1a6db76d11f73294ca1321f487b008a4, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: palace metal
+    second: {fileID: 2100000, guid: 7a8fc84b13a11074387a4cfd1f407501, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: palace patina
+    second: {fileID: 2100000, guid: 9354a6410747aff4cab58426bc3f2512, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: palace wall
+    second: {fileID: 2100000, guid: a7467496a04f48449a2ee6e9cc609929, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: palace white
+    second: {fileID: 2100000, guid: 1442c33246a5b994f99e801417c8a5b1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: palace window
+    second: {fileID: 2100000, guid: 5a4378c0d9d632141a688870a44b1567, type: 2}
   materials:
     importMaterials: 1
     materialName: 0

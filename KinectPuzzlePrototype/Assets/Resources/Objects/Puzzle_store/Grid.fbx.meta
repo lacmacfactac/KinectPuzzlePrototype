@@ -31,6 +31,51 @@ ModelImporter:
     100050: Origin_C06_Slot_C06
     100052: Origin_C07_Slot_C07
     100054: Origin_C08_Slot_C08
+    100056: Origin_B00@Slot_B00
+    100058: Origin_B01@Slot_B01
+    100060: Origin_B02@Slot_B02
+    100062: Origin_B03@Slot_B03
+    100064: Origin_B04@Slot_B04
+    100066: Origin_B05@Slot_B05
+    100068: Origin_B06@Slot_B06
+    100070: Origin_B07@Slot_B07
+    100072: Origin_B08@Slot_B08
+    100074: Origin_C00@Slot_C00
+    100076: Origin_C01@Slot_C01
+    100078: Origin_C02@Slot_C02
+    100080: Origin_C03@Slot_C03
+    100082: Origin_C04@Slot_C04
+    100084: Origin_C05@Slot_C05
+    100086: Origin_C06@Slot_C06
+    100088: Origin_C07@Slot_C07
+    100090: Origin_C08@Slot_C08
+    100092: Slot_A00
+    100094: Slot_A01
+    100096: Slot_A02
+    100098: Slot_A03
+    100100: Slot_A04
+    100102: Slot_A05
+    100104: Slot_A06
+    100106: Slot_A07
+    100108: Slot_A08
+    100110: Slot_B00
+    100112: Slot_B01
+    100114: Slot_B02
+    100116: Slot_B03
+    100118: Slot_B04
+    100120: Slot_B05
+    100122: Slot_B06
+    100124: Slot_B07
+    100126: Slot_B08
+    100128: Slot_C00
+    100130: Slot_C01
+    100132: Slot_C02
+    100134: Slot_C03
+    100136: Slot_C04
+    100138: Slot_C05
+    100140: Slot_C06
+    100142: Slot_C07
+    100144: Slot_C08
     400000: //RootNode
     400002: Origin_A00@Slot_A00
     400004: Origin_A01@Slot_A01
@@ -59,6 +104,51 @@ ModelImporter:
     400050: Origin_C06_Slot_C06
     400052: Origin_C07_Slot_C07
     400054: Origin_C08_Slot_C08
+    400056: Origin_B00@Slot_B00
+    400058: Origin_B01@Slot_B01
+    400060: Origin_B02@Slot_B02
+    400062: Origin_B03@Slot_B03
+    400064: Origin_B04@Slot_B04
+    400066: Origin_B05@Slot_B05
+    400068: Origin_B06@Slot_B06
+    400070: Origin_B07@Slot_B07
+    400072: Origin_B08@Slot_B08
+    400074: Origin_C00@Slot_C00
+    400076: Origin_C01@Slot_C01
+    400078: Origin_C02@Slot_C02
+    400080: Origin_C03@Slot_C03
+    400082: Origin_C04@Slot_C04
+    400084: Origin_C05@Slot_C05
+    400086: Origin_C06@Slot_C06
+    400088: Origin_C07@Slot_C07
+    400090: Origin_C08@Slot_C08
+    400092: Slot_A00
+    400094: Slot_A01
+    400096: Slot_A02
+    400098: Slot_A03
+    400100: Slot_A04
+    400102: Slot_A05
+    400104: Slot_A06
+    400106: Slot_A07
+    400108: Slot_A08
+    400110: Slot_B00
+    400112: Slot_B01
+    400114: Slot_B02
+    400116: Slot_B03
+    400118: Slot_B04
+    400120: Slot_B05
+    400122: Slot_B06
+    400124: Slot_B07
+    400126: Slot_B08
+    400128: Slot_C00
+    400130: Slot_C01
+    400132: Slot_C02
+    400134: Slot_C03
+    400136: Slot_C04
+    400138: Slot_C05
+    400140: Slot_C06
+    400142: Slot_C07
+    400144: Slot_C08
     2100000: No Name
     2300000: Origin_A00@Slot_A00
     2300002: Origin_A01@Slot_A01
@@ -87,6 +177,33 @@ ModelImporter:
     2300048: Origin_C06_Slot_C06
     2300050: Origin_C07_Slot_C07
     2300052: Origin_C08_Slot_C08
+    2300054: Slot_A00
+    2300056: Slot_A01
+    2300058: Slot_A02
+    2300060: Slot_A03
+    2300062: Slot_A04
+    2300064: Slot_A05
+    2300066: Slot_A06
+    2300068: Slot_A07
+    2300070: Slot_A08
+    2300072: Slot_B00
+    2300074: Slot_B01
+    2300076: Slot_B02
+    2300078: Slot_B03
+    2300080: Slot_B04
+    2300082: Slot_B05
+    2300084: Slot_B06
+    2300086: Slot_B07
+    2300088: Slot_B08
+    2300090: Slot_C00
+    2300092: Slot_C01
+    2300094: Slot_C02
+    2300096: Slot_C03
+    2300098: Slot_C04
+    2300100: Slot_C05
+    2300102: Slot_C06
+    2300104: Slot_C07
+    2300106: Slot_C08
     3300000: Origin_A00@Slot_A00
     3300002: Origin_A01@Slot_A01
     3300004: Origin_A02@Slot_A02
@@ -114,6 +231,33 @@ ModelImporter:
     3300048: Origin_C06_Slot_C06
     3300050: Origin_C07_Slot_C07
     3300052: Origin_C08_Slot_C08
+    3300054: Slot_A00
+    3300056: Slot_A01
+    3300058: Slot_A02
+    3300060: Slot_A03
+    3300062: Slot_A04
+    3300064: Slot_A05
+    3300066: Slot_A06
+    3300068: Slot_A07
+    3300070: Slot_A08
+    3300072: Slot_B00
+    3300074: Slot_B01
+    3300076: Slot_B02
+    3300078: Slot_B03
+    3300080: Slot_B04
+    3300082: Slot_B05
+    3300084: Slot_B06
+    3300086: Slot_B07
+    3300088: Slot_B08
+    3300090: Slot_C00
+    3300092: Slot_C01
+    3300094: Slot_C02
+    3300096: Slot_C03
+    3300098: Slot_C04
+    3300100: Slot_C05
+    3300102: Slot_C06
+    3300104: Slot_C07
+    3300106: Slot_C08
     4300000: Origin_A00@Slot_A00
     4300002: Origin_A01@Slot_A01
     4300004: Origin_A02@Slot_A02
@@ -141,6 +285,33 @@ ModelImporter:
     4300048: Origin_C06_Slot_C06
     4300050: Origin_C07_Slot_C07
     4300052: Origin_C08_Slot_C08
+    4300054: Slot_A00
+    4300056: Slot_A01
+    4300058: Slot_A02
+    4300060: Slot_A03
+    4300062: Slot_A04
+    4300064: Slot_A05
+    4300066: Slot_A06
+    4300068: Slot_A07
+    4300070: Slot_A08
+    4300072: Slot_B00
+    4300074: Slot_B01
+    4300076: Slot_B02
+    4300078: Slot_B03
+    4300080: Slot_B04
+    4300082: Slot_B05
+    4300084: Slot_B06
+    4300086: Slot_B07
+    4300088: Slot_B08
+    4300090: Slot_C00
+    4300092: Slot_C01
+    4300094: Slot_C02
+    4300096: Slot_C03
+    4300098: Slot_C04
+    4300100: Slot_C05
+    4300102: Slot_C06
+    4300104: Slot_C07
+    4300106: Slot_C08
   externalObjects: {}
   materials:
     importMaterials: 1
