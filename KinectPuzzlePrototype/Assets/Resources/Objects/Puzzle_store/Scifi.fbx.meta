@@ -1068,7 +1068,52 @@ ModelImporter:
     7401454: B27_Anim03|Cylinder.028Action
     7401456: B27_Anim03|Cylinder.031Action.001
     9500000: //RootNode
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: No Name
+    second: {fileID: 2100000, guid: 3275152d27650274db82314510399ccb, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: SCIFI_01
+    second: {fileID: 2100000, guid: a770af7d91ccb4f47ad838ff3be9e22d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: SCIFI_02
+    second: {fileID: 2100000, guid: 78d25eaddb0d5c7449857137927ca2b1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: SCIFI_03
+    second: {fileID: 2100000, guid: 958fad8a74bc46440bad115ce9e5ecf0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: SCIFI_04
+    second: {fileID: 2100000, guid: 382415d6535de6a41be895c82ef01fcf, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: SCIFI_05
+    second: {fileID: 2100000, guid: 9ee5ddeeeb0059b43a413f04481d3071, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: SCIFI_06
+    second: {fileID: 2100000, guid: f8305a1b9b4a4cf418ee52e1a8bd7f5d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: SCIFI_07
+    second: {fileID: 2100000, guid: 17caba9330d378946b3f1a06771d1dd0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: SCIFI_08
+    second: {fileID: 2100000, guid: d2c8c06aa85b53d458a217b54a67d4b3, type: 2}
   materials:
     importMaterials: 1
     materialName: 0

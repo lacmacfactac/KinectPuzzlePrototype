@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class Mover : MonoBehaviour
 {
+    AudioSource audioSource;
+    AudioClip clip;
     Animator animator;
     public bool grabbed = false;
     int stateCount;
@@ -26,8 +28,20 @@ public class Mover : MonoBehaviour
 
 
     // Start is called before the first frame update
+
+    private void Awake()
+    {
+     //   clip = Resources.LoadAsync("Audio/Drag.wav") as AudioClip;
+    }
+    
+
     void Start()
     {
+        //audioSource = gameObject.AddComponent<AudioSource>();
+        audioSource = gameObject.GetComponent<AudioSource>();
+        //audioSource.clip = clip;
+        audioSource.loop = true;
+        audioSource.Play();
         scaleSetpoint = 1;
         stateCount = transform.childCount;
         animator = transform.GetComponent<Animator>();
@@ -41,6 +55,26 @@ public class Mover : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        
+        if (settled)
+        {
+            if (audioSource.isPlaying)
+            {
+                Debug.Log("Audio stopped on " + gameObject.name);
+
+                audioSource.Pause();
+            }
+        }
+        else
+        {
+            if (!audioSource.isPlaying)
+            {
+                Debug.Log("Audio started on " + gameObject.name);
+                audioSource.UnPause();
+            }
+        }
+        
+
 
             if (!grabbed && !settled)
             {

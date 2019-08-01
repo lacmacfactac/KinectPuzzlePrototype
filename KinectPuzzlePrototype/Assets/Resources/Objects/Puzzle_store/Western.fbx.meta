@@ -255,6 +255,16 @@ ModelImporter:
       assembly: UnityEngine.CoreModule
       name: western yellow
     second: {fileID: 2100000, guid: 872ffd0dc893f944e800a736f51bbd97, type: 2}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: TreeBark_albedo_M
+    second: {fileID: 2800000, guid: bf365852907e3524d8b4dd26df71dd4d, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: WoodPlanksOld0002_8
+    second: {fileID: 2800000, guid: 4e8fadc8e0802364aa320811414ef46d, type: 3}
   materials:
     importMaterials: 1
     materialName: 0
