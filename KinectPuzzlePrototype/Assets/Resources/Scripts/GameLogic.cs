@@ -17,8 +17,8 @@ public class GameLogic : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        solutionHandler = GameObject.FindObjectOfType<SolutionHandler>();
-        solutions = GameObject.FindGameObjectsWithTag("Complete");
+        //solutionHandler = GameObject.FindObjectOfType<SolutionHandler>();
+        //solutions = GameObject.FindGameObjectsWithTag("Complete");
         puzzleSockets = GameObject.FindGameObjectsWithTag("Origin");
         puzzle = GameObject.Find("Puzzle");
     }
@@ -26,18 +26,23 @@ public class GameLogic : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        /*
         if (firstRun) {
             firstRun = false;
             Scramble();
         }
+        */
         if (!waitingForReset)
         {
             correctSolution = true;
             for (int i = 0; i < puzzleSockets.Length; i++)
             {
                 int next = (i + 1) % puzzleSockets.Length;
-                if (puzzleSockets[i].GetComponent<Mover>().GetState() == -1 ||
-                    puzzleSockets[i].GetComponent<Mover>().GetState() != puzzleSockets[next].GetComponent<Mover>().GetState())
+                if (
+                    !puzzleSockets[i].GetComponent<Mover>().settled || 
+                    puzzleSockets[i].GetComponent<Mover>().GetState() == -1 ||
+                    puzzleSockets[i].GetComponent<Mover>().GetState() != puzzleSockets[next].GetComponent<Mover>().GetState()
+                    )
                 {
                     correctSolution = false;
                     continue;
@@ -50,25 +55,29 @@ public class GameLogic : MonoBehaviour
 
             if (correctSolution)
             {
-                waitingForReset = true;
-                solutionHandler.Solve(solutionIndex);
+                Scramble(2.0f);
+                //solutionHandler.Solve(solutionIndex);
             }
         }
     }
 
-    public void Scramble()
+    private void Scramble(float delay)
     {
         Debug.Log("Scrambling");
-        foreach (GameObject g in puzzleSockets)
+        for (int i = 0; i < puzzleSockets.Length; i++)
         {
-            g.GetComponent<Mover>().SetToRandom();
+            StartCoroutine(ScramblingRoutine(puzzleSockets[i], i * 0.15f));
         }
     }
 
     public void Reset()
     {
         Debug.Log("Game logic reset");
-        waitingForReset = false;
-        Scramble();
+       // Scramble();
+    }
+    IEnumerator ScramblingRoutine(GameObject g, float delay)
+    {
+        yield return new WaitForSeconds(delay);
+            g.GetComponent<Mover>().SetToRandom();
     }
 }

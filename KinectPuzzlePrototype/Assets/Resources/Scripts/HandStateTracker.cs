@@ -2,11 +2,13 @@
 using System.Collections.Generic;
 using UnityEngine;
 using Kinect = Windows.Kinect;
+using UnityEngine.UI;
 
 public class HandStateTracker : MonoBehaviour
 {
     public bool mockHand = false;
-    GameObject grabHand;
+    GameObject hand;
+    GameObject ring;
     GameObject trackHand;
     private Kinect.HandState state = Kinect.HandState.Unknown;
     HandSide side = HandSide.LEFT;
@@ -19,6 +21,7 @@ public class HandStateTracker : MonoBehaviour
     bool grabFlag = false;
     bool releaseFlag = false;
     bool flipFlop = true;
+    bool visible = false;
 
     public Kinect.HandState State
     {
@@ -28,28 +31,28 @@ public class HandStateTracker : MonoBehaviour
         }
         set
         {
-            state = value;
-            switch (state)
+            switch (value)
             {
                 case Kinect.HandState.Closed:
-                    if (flipFlop){
+                    visible = true;
+                    if (state != value){
                         grabFlag = true;
-                        flipFlop = false;
                     }
 
                     break;
                 case Kinect.HandState.Open:
-                    if (!flipFlop) {
+                    visible = true;
+                    if (state != value) {
                         releaseFlag = true;
-                        flipFlop = true;
                     }
                     break;
                 default:
-                    flipFlop = true;
                     releaseFlag = true;
+                    visible = false;
                     break;
 
             }
+            state = value;
         }
     }
 
@@ -59,11 +62,14 @@ public class HandStateTracker : MonoBehaviour
     void Start()
     {
         startPos = Vector3.zero;
-        grabHand = Instantiate(Resources.Load<GameObject>("Objects/Grab_indicator") as GameObject,transform);
-        grabHand.GetComponent<Collider>().enabled = false;
-        trackHand = Instantiate(Resources.Load<GameObject>("Objects/Track_indicator") as GameObject, transform);
-        trackHand.GetComponent<Collider>().enabled = false;
-
+        hand = Instantiate(Resources.Load<GameObject>("Objects/Hand_marker") as GameObject, GameObject.Find("Canvas").transform);
+        Color holder = Color.HSVToRGB(Random.value, 1, 1);
+        //holder.a = 0.5f;
+        foreach (Transform t in hand.transform)
+        {
+            t.gameObject.GetComponent<Image>().color = holder;
+        }
+        ring = hand.transform.GetChild(hand.transform.childCount-1).gameObject;
     }
 
     // Update is called once per frame
@@ -86,10 +92,20 @@ public class HandStateTracker : MonoBehaviour
             }
         }
 
+        if (visible)
+        {
+            hand.transform.position = Camera.main.WorldToScreenPoint(transform.position);
+            hand.SetActive(true);
+            Debug.Log(hand.transform.position);
+        }
+        else
+        {
+            hand.SetActive(false);
+        }
+
         if (grabFlag)
         {
-            grabHand.SetActive(true);
-            trackHand.SetActive(false);
+            ring.transform.localScale = Vector3.one * 0.55f;
             grabFlag = false;
             if (rayHit && hit.transform != null && hit.transform.GetComponent<Mover>() != null && hit.transform.GetComponent<Mover>().grabber == null)
             {
@@ -101,8 +117,7 @@ public class HandStateTracker : MonoBehaviour
         }
         if (releaseFlag)
         {
-            grabHand.SetActive(false);
-            trackHand.SetActive(true);
+            ring.transform.localScale = Vector3.one;
             releaseFlag = false;
             if (moverScript != null)
             {
@@ -119,5 +134,9 @@ public class HandStateTracker : MonoBehaviour
             }
             }
 
+    }
+    private void OnDestroy()
+    {
+        Destroy(hand);
     }
 }

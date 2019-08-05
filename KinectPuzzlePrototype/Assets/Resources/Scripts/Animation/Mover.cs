@@ -18,13 +18,15 @@ public class Mover : MonoBehaviour
     float deltaPhase = 0;
     public float normalizedPhase;
     int temporaryState;
-    bool settled = false;
+    public bool settled = false;
+    public bool reset = false;
     bool scrambling = false;
     public GameObject grabber;
     Mover[] otherOrigins;
     float scaleSetpoint;
     float minimumScale = 0.8f;
     float externalScaleModifier = 1;
+    float phaseRate = 1;
 
 
     // Start is called before the first frame update
@@ -78,9 +80,10 @@ public class Mover : MonoBehaviour
 
             if (!grabbed && !settled)
             {
-                phase = Mathf.Lerp(phase, targetPhase, Time.deltaTime * 10);
+                phase = Mathf.Lerp(phase, targetPhase, (Time.deltaTime * 6));
                 if (Mathf.Abs(phase - targetPhase) < 0.01f)
                 {
+                phaseRate = 1;
                     phase = targetPhase;
                     settled = true;
                 }
@@ -157,7 +160,7 @@ public class Mover : MonoBehaviour
             }
         }
         
-        float localScaleSetpoint = scaleSetpoint;
+        float localScaleSetpoint = settled? 1 : 0.8f;
         transform.localScale = Vector3.Lerp(transform.localScale, Vector3.one*localScaleSetpoint, Time.deltaTime*5);
         /*
         if (grabber != null)
@@ -184,6 +187,7 @@ public class Mover : MonoBehaviour
     public void Grab(GameObject grabberObject) {
         grabber = grabberObject;
         scaleSetpoint = minimumScale;
+        reset = false;
     }
 
     public void Drag(float val, float scale, GameObject source)
@@ -214,11 +218,11 @@ public class Mover : MonoBehaviour
     }
     public void SetToRandom()
     {
-        int s = (int)(Random.value * stateCount);
+        int s = (int)((Random.value * (stateCount) + 1));
         Debug.Log("Jumpig to state " + s);
         grabbed = false;
         settled = false;
-        targetPhase = phase + (s - (phase % stateCount));
+        targetPhase = (int)(phase + s);
 
     }
     public int GetState() {
