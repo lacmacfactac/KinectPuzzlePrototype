@@ -208,7 +208,77 @@ ModelImporter:
     4300048: 00kiskerites.003
     4300050: Brick 2x2.068
     4300052: Brick 2x2.067
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: lego black
+    second: {fileID: 2100000, guid: cde5812a98b6a564d8bea7aaef03adfc, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: lego blue
+    second: {fileID: 2100000, guid: 30b28d510128f674289a4b4c7d4fec45, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: lego brown
+    second: {fileID: 2100000, guid: 25f1d5692902bd7459f2fe8b6f2cb1af, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: lego dark blue
+    second: {fileID: 2100000, guid: 63206ef50b8bfa6419ee108d18fd833a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: lego dark blue.001
+    second: {fileID: 2100000, guid: d109027f086bd134eafa38fbc81d4fbd, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: lego glass
+    second: {fileID: 2100000, guid: cc0fbc7af1c81de47b1a5e29ae3e2ef3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: lego green
+    second: {fileID: 2100000, guid: 2ea2946668410c444874fd3d59fe948e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: lego green2
+    second: {fileID: 2100000, guid: 5c4117e93b06dbd4bbf5751671b082f8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: lego orange
+    second: {fileID: 2100000, guid: 13480cfb1c9f5a04d9702c807268a783, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: lego pink
+    second: {fileID: 2100000, guid: 5a699b7932569524c886bd0847ff4d65, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: lego red
+    second: {fileID: 2100000, guid: 0cb34dc71b60d0c40be815b291581971, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: lego szurke
+    second: {fileID: 2100000, guid: 177985dc3c7794347904e131fb8c4ef9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: lego white
+    second: {fileID: 2100000, guid: e2c0d9a5ea299c543a4526cdd351f769, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: lego yellow
+    second: {fileID: 2100000, guid: e7fef70a5eb1ce94e89b23337956c8b2, type: 2}
   materials:
     importMaterials: 1
     materialName: 0
