@@ -204,67 +204,7 @@ ModelImporter:
     4300048: Cube.128
     4300050: Cube.241
     4300052: Cube.243
-  externalObjects:
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: western black
-    second: {fileID: 2100000, guid: d2fe1dcf6036452458221dff13e701ab, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: western brown
-    second: {fileID: 2100000, guid: f043964101567d649b9655504858bc3d, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: western dark
-    second: {fileID: 2100000, guid: 6ba74ec7ccfd01f44a52929a0680056b, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: western glass
-    second: {fileID: 2100000, guid: 4cc55febc635f9d459ecea1b6d641b59, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: western light brown
-    second: {fileID: 2100000, guid: 9d4b4648ce9647c439bb5a4246b28bc7, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: western metal
-    second: {fileID: 2100000, guid: f7e57e22865935f4684f02e24d757bef, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: western wood 01
-    second: {fileID: 2100000, guid: 32badcbf30e11e440b62f23d1f9ae144, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: western wood 02
-    second: {fileID: 2100000, guid: ef8aeba2614bbab479460d30e2535bc0, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: western wood 03
-    second: {fileID: 2100000, guid: c7f4818bfee0af54abd6e78d192235ac, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: western yellow
-    second: {fileID: 2100000, guid: 872ffd0dc893f944e800a736f51bbd97, type: 2}
-  - first:
-      type: UnityEngine:Texture2D
-      assembly: UnityEngine.CoreModule
-      name: TreeBark_albedo_M
-    second: {fileID: 2800000, guid: bf365852907e3524d8b4dd26df71dd4d, type: 3}
-  - first:
-      type: UnityEngine:Texture2D
-      assembly: UnityEngine.CoreModule
-      name: WoodPlanksOld0002_8
-    second: {fileID: 2800000, guid: 4e8fadc8e0802364aa320811414ef46d, type: 3}
+  externalObjects: {}
   materials:
     importMaterials: 1
     materialName: 0
