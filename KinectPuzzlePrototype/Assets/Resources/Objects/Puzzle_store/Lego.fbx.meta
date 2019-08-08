@@ -58,6 +58,36 @@ ModelImporter:
     100104: Element_LEGO@Origin_C07
     100106: Element_LEGO@Origin_C08
     100108: //RootNode
+    100110: 00kiskerites.001
+    100112: Brick 2x2.099
+    100114: Brick 2x4.147
+    100116: Element_lego@Origin_A00
+    100118: Element_lego@Origin_A01
+    100120: Element_lego@Origin_A02
+    100122: Element_lego@Origin_A03
+    100124: Element_lego@Origin_A04
+    100126: Element_lego@Origin_A05
+    100128: Element_lego@Origin_A06
+    100130: Element_lego@Origin_A07
+    100132: Element_lego@Origin_A08
+    100134: Element_lego@Origin_B00
+    100136: Element_lego@Origin_B01
+    100138: Element_lego@Origin_B02
+    100140: Element_lego@Origin_B03
+    100142: Element_lego@Origin_B04
+    100144: Element_lego@Origin_B05
+    100146: Element_lego@Origin_B06
+    100148: Element_lego@Origin_B07
+    100150: Element_lego@Origin_B08
+    100152: Element_lego@Origin_C00
+    100154: Element_lego@Origin_C01
+    100156: Element_lego@Origin_C02
+    100158: Element_lego@Origin_C03
+    100160: Element_lego@Origin_C04
+    100162: Element_lego@Origin_C05
+    100164: Element_lego@Origin_C06
+    100166: Element_lego@Origin_C07
+    100168: Element_lego@Origin_C08
     400000: 00kiskerites.003
     400002: _Knob.033
     400004: Antenna 1 x 4 - Flat Top.015
@@ -113,6 +143,36 @@ ModelImporter:
     400104: Element_LEGO@Origin_C07
     400106: Element_LEGO@Origin_C08
     400108: //RootNode
+    400110: 00kiskerites.001
+    400112: Brick 2x2.099
+    400114: Brick 2x4.147
+    400116: Element_lego@Origin_A00
+    400118: Element_lego@Origin_A01
+    400120: Element_lego@Origin_A02
+    400122: Element_lego@Origin_A03
+    400124: Element_lego@Origin_A04
+    400126: Element_lego@Origin_A05
+    400128: Element_lego@Origin_A06
+    400130: Element_lego@Origin_A07
+    400132: Element_lego@Origin_A08
+    400134: Element_lego@Origin_B00
+    400136: Element_lego@Origin_B01
+    400138: Element_lego@Origin_B02
+    400140: Element_lego@Origin_B03
+    400142: Element_lego@Origin_B04
+    400144: Element_lego@Origin_B05
+    400146: Element_lego@Origin_B06
+    400148: Element_lego@Origin_B07
+    400150: Element_lego@Origin_B08
+    400152: Element_lego@Origin_C00
+    400154: Element_lego@Origin_C01
+    400156: Element_lego@Origin_C02
+    400158: Element_lego@Origin_C03
+    400160: Element_lego@Origin_C04
+    400162: Element_lego@Origin_C05
+    400164: Element_lego@Origin_C06
+    400166: Element_lego@Origin_C07
+    400168: Element_lego@Origin_C08
     2100000: lego yellow
     2100002: lego black
     2100004: lego dark blue
@@ -154,6 +214,9 @@ ModelImporter:
     2300048: Cube.028
     2300050: Cube.029
     2300052: Cube.030
+    2300054: 00kiskerites.001
+    2300056: Brick 2x2.099
+    2300058: Brick 2x4.147
     3300000: 00kiskerites.003
     3300002: _Knob.033
     3300004: Antenna 1 x 4 - Flat Top.015
@@ -181,6 +244,9 @@ ModelImporter:
     3300048: Cube.028
     3300050: Cube.029
     3300052: Cube.030
+    3300054: 00kiskerites.001
+    3300056: Brick 2x2.099
+    3300058: Brick 2x4.147
     4300000: Brick 2x4.039
     4300002: Cube.013
     4300004: Cube.017
@@ -208,6 +274,10 @@ ModelImporter:
     4300048: 00kiskerites.003
     4300050: Brick 2x2.068
     4300052: Brick 2x2.067
+    4300054: 00kiskerites.001
+    4300056: Brick 2x2.099
+    4300058: Brick 2x4.147
+    2186277476908879412: ImportLogs
   externalObjects:
   - first:
       type: UnityEngine:Material
