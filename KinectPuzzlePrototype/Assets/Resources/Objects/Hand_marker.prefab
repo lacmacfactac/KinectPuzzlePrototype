@@ -58,7 +58,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0.9811321, b: 0.9811321, a: 0.6156863}
+  m_Color: {r: 0, g: 0.9811321, b: 0.9811321, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -132,7 +132,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0.9811321, b: 0.9811321, a: 0.6156863}
+  m_Color: {r: 0, g: 0.9811321, b: 0.9811321, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -159,7 +159,7 @@ GameObject:
   - component: {fileID: 6441146690322094715}
   - component: {fileID: 3271871131403209748}
   m_Layer: 5
-  m_Name: HandMarker
+  m_Name: Hand_marker
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -198,3 +198,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a87d450f7c6648d4eb1221079e8d3c3f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  g: {fileID: 0}
