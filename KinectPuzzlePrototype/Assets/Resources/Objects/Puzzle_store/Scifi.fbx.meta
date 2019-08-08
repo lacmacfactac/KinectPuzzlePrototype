@@ -1073,47 +1073,47 @@ ModelImporter:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: No Name
-    second: {fileID: 2100000, guid: 3275152d27650274db82314510399ccb, type: 2}
+    second: {fileID: 2100000, guid: f6c804ac2fcfa74429b8d8c742bfd563, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: SCIFI_01
-    second: {fileID: 2100000, guid: a770af7d91ccb4f47ad838ff3be9e22d, type: 2}
+    second: {fileID: 2100000, guid: 919241e04ad43da4b9a6d378c78dc89e, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: SCIFI_02
-    second: {fileID: 2100000, guid: 78d25eaddb0d5c7449857137927ca2b1, type: 2}
+    second: {fileID: 2100000, guid: 1c8f9ac978e0567448a66761f664eb0f, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: SCIFI_03
-    second: {fileID: 2100000, guid: 958fad8a74bc46440bad115ce9e5ecf0, type: 2}
+    second: {fileID: 2100000, guid: 8c3920fe41ff4ad48a3ac1aae525e906, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: SCIFI_04
-    second: {fileID: 2100000, guid: 382415d6535de6a41be895c82ef01fcf, type: 2}
+    second: {fileID: 2100000, guid: cd77110735732694a9d8fce76bdc537e, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: SCIFI_05
-    second: {fileID: 2100000, guid: 9ee5ddeeeb0059b43a413f04481d3071, type: 2}
+    second: {fileID: 2100000, guid: c313bfa7421a29441aab31bf9049158a, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: SCIFI_06
-    second: {fileID: 2100000, guid: f8305a1b9b4a4cf418ee52e1a8bd7f5d, type: 2}
+    second: {fileID: 2100000, guid: fb434042fad36bb4593ff689ca4b3716, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: SCIFI_07
-    second: {fileID: 2100000, guid: 17caba9330d378946b3f1a06771d1dd0, type: 2}
+    second: {fileID: 2100000, guid: 03a0cf3cc09d16e4fb6ffa161ff933a5, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: SCIFI_08
-    second: {fileID: 2100000, guid: d2c8c06aa85b53d458a217b54a67d4b3, type: 2}
+    second: {fileID: 2100000, guid: 88162c5dc32f1f24793614dbcf8b60e9, type: 2}
   materials:
     importMaterials: 1
     materialName: 0
