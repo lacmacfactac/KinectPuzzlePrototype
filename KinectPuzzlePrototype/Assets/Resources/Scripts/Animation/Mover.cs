@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class Mover : MonoBehaviour
 {
-    AudioSource audioSource;
-    AudioClip clip;
+    public AudioSource pingSource;
+    public AudioSource dragSource;
     Animator animator;
     public bool grabbed = false;
     int stateCount;
@@ -27,6 +27,7 @@ public class Mover : MonoBehaviour
     float minimumScale = 0.8f;
     float externalScaleModifier = 1;
     float phaseRate = 1;
+    int[] order;
 
 
     // Start is called before the first frame update
@@ -40,12 +41,14 @@ public class Mover : MonoBehaviour
     void Start()
     {
         //audioSource = gameObject.AddComponent<AudioSource>();
-        audioSource = gameObject.GetComponent<AudioSource>();
         //audioSource.clip = clip;
-        audioSource.loop = true;
-        audioSource.Play();
         scaleSetpoint = 1;
         stateCount = transform.childCount;
+        order = new int[stateCount];
+        for (int i = 0; i < order.Length; i++) {
+            order[i] = i;
+        }
+        order = ShuffleOrder(order);
         animator = transform.GetComponent<Animator>();
         children = new Transform[transform.childCount];
         for (int i = 0; i < transform.childCount; i++) {
@@ -57,22 +60,26 @@ public class Mover : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
-        if (settled)
-        {
-            if (audioSource.isPlaying)
+        if (dragSource != null) {
+            if (settled)
             {
-                Debug.Log("Audio stopped on " + gameObject.name);
+                if (dragSource.isPlaying)
+                {
+                    Debug.Log("Audio stopped on " + gameObject.name);
 
-                audioSource.Pause();
+                    dragSource.Pause();
+                }
             }
-        }
-        else
-        {
-            if (!audioSource.isPlaying)
+            else
             {
-                Debug.Log("Audio started on " + gameObject.name);
-                audioSource.UnPause();
+                if (!dragSource.isPlaying)
+                {
+                    Debug.Log("Audio started on " + gameObject.name);
+                    if (dragSource.time == 0) {
+                        dragSource.Play();
+                    }
+                    dragSource.UnPause();
+                }
             }
         }
         
@@ -83,7 +90,7 @@ public class Mover : MonoBehaviour
                 phase = Mathf.Lerp(phase, targetPhase, (Time.deltaTime * 6));
                 if (Mathf.Abs(phase - targetPhase) < 0.01f)
                 {
-                phaseRate = 1;
+                    phaseRate = 1;
                     phase = targetPhase;
                     settled = true;
                 }
@@ -117,7 +124,7 @@ public class Mover : MonoBehaviour
 
         for (int i = 0; i < stateCount; i++)
         {
-            int wrappedState = (i + temporaryState + stateCount - 1) % stateCount;
+            int wrappedState = order[(i + temporaryState + stateCount - 1) % stateCount];
 
             //??????
             /*
@@ -160,7 +167,7 @@ public class Mover : MonoBehaviour
             }
         }
         
-        float localScaleSetpoint = settled? 1 : 0.8f;
+        float localScaleSetpoint = !grabbed || settled ? 1 : 0.8f;
         transform.localScale = Vector3.Lerp(transform.localScale, Vector3.one*localScaleSetpoint, Time.deltaTime*5);
         /*
         if (grabber != null)
@@ -188,6 +195,9 @@ public class Mover : MonoBehaviour
         grabber = grabberObject;
         scaleSetpoint = minimumScale;
         reset = false;
+        if (pingSource != null) {
+            pingSource.Play();
+        }
     }
 
     public void Drag(float val, float scale, GameObject source)
@@ -227,11 +237,22 @@ public class Mover : MonoBehaviour
     }
     public int GetState() {
         if (!scrambling && settled && !grabbed) {
-            return state;
+            return order[state];
         } else
         {
             return -1;
         }
 
+    }
+
+    int[] ShuffleOrder(int[] order) {
+
+        for (int i = 0; i < order.Length; i++) {
+            int other = (int)(Random.value * (order.Length - 1));
+            int holder = order[i];
+            order[i] = order[other];
+            order[other] = holder;
+        }
+        return order;
     }
 }

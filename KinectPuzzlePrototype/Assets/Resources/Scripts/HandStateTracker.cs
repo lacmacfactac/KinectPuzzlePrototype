@@ -23,6 +23,7 @@ public class HandStateTracker : MonoBehaviour
     bool flipFlop = true;
     bool visible = false;
     Vector3 ringScaleTarget;
+    GameLogic gameLogic;
 
     public Kinect.HandState State
     {
@@ -62,6 +63,7 @@ public class HandStateTracker : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        gameLogic = GameObject.FindObjectOfType<GameLogic>();
         ringScaleTarget = Vector3.one;
         startPos = Vector3.zero;
         hand = Instantiate(Resources.Load<GameObject>("Objects/Hand_marker") as GameObject, GameObject.Find("Canvas").transform);
@@ -110,7 +112,7 @@ public class HandStateTracker : MonoBehaviour
         {
             ringScaleTarget = Vector3.one * 0.55f;
             grabFlag = false;
-            if (rayHit && hit.transform != null && hit.transform.GetComponent<Mover>() != null && hit.transform.GetComponent<Mover>().grabber == null)
+            if (rayHit && hit.transform != null && !gameLogic.waitingForReset && hit.transform.GetComponent<Mover>() != null && hit.transform.GetComponent<Mover>().grabber == null)
             {
                 grabbedObject = hit.transform.gameObject;
                 moverScript = hit.transform.GetComponent<Mover>();
@@ -140,6 +142,7 @@ public class HandStateTracker : MonoBehaviour
     }
     private void OnDestroy()
     {
+        moverScript.Release();
         Destroy(hand);
     }
 }

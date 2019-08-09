@@ -13,7 +13,7 @@ public class GameLogic : MonoBehaviour
     SolutionHandler solutionHandler;
     public bool waitingForReset = false;
     bool firstRun = true;
-
+    public GameObject winAnimation;
     // Start is called before the first frame update
     void Start()
     {
@@ -21,6 +21,10 @@ public class GameLogic : MonoBehaviour
         //solutions = GameObject.FindGameObjectsWithTag("Complete");
         puzzleSockets = GameObject.FindGameObjectsWithTag("Origin");
         puzzle = GameObject.Find("Puzzle");
+
+
+        waitingForReset = true;
+        Scramble();
     }
 
     // Update is called once per frame
@@ -49,19 +53,19 @@ public class GameLogic : MonoBehaviour
                 }
                 else
                 {
-                    solutionIndex = puzzleSockets[i].GetComponent<Mover>().GetState();
                 }
             }
 
             if (correctSolution)
             {
-                Scramble(2.0f);
+                waitingForReset = true;
+                gameObject.GetComponent<Animator>().SetTrigger("Trigger");
                 //solutionHandler.Solve(solutionIndex);
             }
         }
     }
 
-    private void Scramble(float delay)
+    public void Scramble()
     {
         Debug.Log("Scrambling");
         for (int i = 0; i < puzzleSockets.Length; i++)
@@ -73,11 +77,12 @@ public class GameLogic : MonoBehaviour
     public void Reset()
     {
         Debug.Log("Game logic reset");
-       // Scramble();
     }
+    
     IEnumerator ScramblingRoutine(GameObject g, float delay)
     {
         yield return new WaitForSeconds(delay);
             g.GetComponent<Mover>().SetToRandom();
+        waitingForReset = false;
     }
 }
