@@ -46,7 +46,7 @@ public class CamAdjust : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.anyKeyDown) {
+        if (Input.anyKeyDown && !Input.GetKeyDown(KeyCode.Space)) {
             printUntil = Time.time + 5;
         }
         if (Input.GetKeyDown(KeyCode.I))
@@ -137,7 +137,7 @@ public class CamAdjust : MonoBehaviour
             changed = true;
             param.kinectZoom -= stepSize;
         }
-        if (Input.GetKeyDown(KeyCode.P))
+        if (Input.GetKeyDown(KeyCode.L))
         {
             changed = true;
             param = new CamParameters();
@@ -179,7 +179,7 @@ public class CamAdjust : MonoBehaviour
     {
         if (Time.time < printUntil)
         {
-            Rect posDataArea = new Rect(Screen.width / 2 - 250, Screen.height / 2 - 100, 200, 500);
+            Rect posDataArea = new Rect(40, Screen.height / 2 - 200, 200, 500);
             string data =
                 "   [W]   [R]\n" +
                 "[A][S][D][F]\n" +
@@ -200,15 +200,18 @@ public class CamAdjust : MonoBehaviour
                 "[Y][X]\n" +
                 "Kinect zoom: " + GameObject.FindObjectOfType<KinectInput>().zoom.ToString() + "\n"+ 
                 "\n" +
-                "[I][O][P]\n" +
-                "Load/Save/Load factory\n" +
+                "[I][O]\n" +
+                "      [L]\n" +
+                "Load/Save/\n" +
+                "Load factory\n" +
                 "\n" +
                 "[SPACE]\n" +
-                "Scramble now" +
+                "Scramble now\n" +
                 "\n" +
                 "[ESC]\n" +
                 "Quit"
                 ;
+            GUI.contentColor = Color.green;
             GUI.Label(posDataArea, data);
         }
     }
