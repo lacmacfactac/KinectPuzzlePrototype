@@ -195,9 +195,6 @@ public class Mover : MonoBehaviour
         grabber = grabberObject;
         scaleSetpoint = minimumScale;
         reset = false;
-        if (pingSource != null) {
-            pingSource.Play();
-        }
     }
 
     public void Drag(float val, float scale, GameObject source)
@@ -217,6 +214,10 @@ public class Mover : MonoBehaviour
         deltaPhase = 0;
         targetPhase = Mathf.Round(phase);
         grabber = null;
+        if (pingSource != null)
+        {
+            pingSource.Play();
+        }
     }
     public void Set(int s)
     {

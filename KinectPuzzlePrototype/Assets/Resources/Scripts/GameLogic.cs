@@ -38,6 +38,12 @@ public class GameLogic : MonoBehaviour
         */
         if (!waitingForReset)
         {
+
+            if (Input.GetKeyDown(KeyCode.Space))
+            {
+                Scramble();
+            }
+
             correctSolution = true;
             for (int i = 0; i < puzzleSockets.Length; i++)
             {

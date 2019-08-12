@@ -9,9 +9,10 @@ public class CamParameters {
 
 
     public int stepSizePower = -1;
-    public Vector3 pos;
-    public Quaternion rot;
-    public float focal = 50;
+    public Vector3 pos = new Vector3(0,0,8.84f);
+    public Quaternion rot = new Quaternion(0,1,0,0);
+    public float focal = 17.7f;
+    public float kinectZoom = 2;
 
 }
 
@@ -126,6 +127,24 @@ public class CamAdjust : MonoBehaviour
             changed = true;
             param.focal -= stepSize;
         }
+        if (Input.GetKeyDown(KeyCode.X))
+        {
+            changed = true;
+            param.kinectZoom += stepSize;
+        }
+        if (Input.GetKeyDown(KeyCode.Y))
+        {
+            changed = true;
+            param.kinectZoom -= stepSize;
+        }
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            changed = true;
+            param = new CamParameters();
+        }
+
+
+
         if (Input.GetKeyDown(KeyCode.O))
         {
             changed = true;
@@ -141,6 +160,7 @@ public class CamAdjust : MonoBehaviour
             transform.position = param.pos;
             cam.focalLength = param.focal;
             transform.rotation = param.rot;
+            GameObject.FindObjectOfType<KinectInput>().zoom = param.kinectZoom;
         }
     }
 
@@ -177,8 +197,18 @@ public class CamAdjust : MonoBehaviour
                 "[G]\n" +
                 "Stepsize: " + Mathf.Pow(10, param.stepSizePower).ToString() + "\n" +
                 "\n" +
+                "[Y][X]\n" +
+                "Kinect zoom: " + GameObject.FindObjectOfType<KinectInput>().zoom.ToString() + "\n"+ 
+                "\n" +
                 "[I][O]\n" +
-                "Load/Save";
+                "Load/Save\n" +
+                "\n" +
+                "[SPACE]\n" +
+                "Scramble now" +
+                "\n" +
+                "[ESC]\n" +
+                "Quit"
+                ;
             GUI.Label(posDataArea, data);
         }
     }

@@ -67,7 +67,7 @@ public class HandStateTracker : MonoBehaviour
         ringScaleTarget = Vector3.one;
         startPos = Vector3.zero;
         hand = Instantiate(Resources.Load<GameObject>("Objects/Hand_marker") as GameObject, GameObject.Find("Canvas").transform);
-        Color holder = Color.HSVToRGB(Random.value, 1, 1);
+        Color holder = new Color(0, 1, 0);
         //holder.a = 0.5f;
         foreach (Transform t in hand.transform)
         {
@@ -110,7 +110,7 @@ public class HandStateTracker : MonoBehaviour
 
         if (grabFlag)
         {
-            ringScaleTarget = Vector3.one * 0.55f;
+            ringScaleTarget = Vector3.one * 0.5f;
             grabFlag = false;
             if (rayHit && hit.transform != null && !gameLogic.waitingForReset && hit.transform.GetComponent<Mover>() != null && hit.transform.GetComponent<Mover>().grabber == null)
             {
@@ -128,6 +128,7 @@ public class HandStateTracker : MonoBehaviour
             {
                 moverScript.Release();
                 grabbedObject = null;
+                moverScript = null;
             }
         }
 
