@@ -137,7 +137,7 @@ public class CamAdjust : MonoBehaviour
             changed = true;
             param.kinectZoom -= stepSize;
         }
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetKeyDown(KeyCode.P))
         {
             changed = true;
             param = new CamParameters();
@@ -200,8 +200,8 @@ public class CamAdjust : MonoBehaviour
                 "[Y][X]\n" +
                 "Kinect zoom: " + GameObject.FindObjectOfType<KinectInput>().zoom.ToString() + "\n"+ 
                 "\n" +
-                "[I][O]\n" +
-                "Load/Save\n" +
+                "[I][O][P]\n" +
+                "Load/Save/Load factory\n" +
                 "\n" +
                 "[SPACE]\n" +
                 "Scramble now" +
