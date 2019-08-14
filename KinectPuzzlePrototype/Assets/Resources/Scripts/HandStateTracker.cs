@@ -136,7 +136,7 @@ public class HandStateTracker : MonoBehaviour
         {
             dragValue = screenPoint.x - startPos.x;
             if (moverScript.grabber = gameObject) {
-                moverScript.Drag(dragValue, .01f, gameObject);
+                moverScript.Drag(dragValue, .005f, gameObject);
             }
             }
 
