@@ -6193,6 +6193,7 @@ MonoBehaviour:
   solutionIndex: -1
   waitingForReset: 0
   winAnimation: {fileID: 0}
+  averageAllowedIdleTime: 10
 --- !u!95 &1423730938
 Animator:
   serializedVersion: 3
