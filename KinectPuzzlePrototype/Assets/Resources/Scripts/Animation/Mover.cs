@@ -180,6 +180,7 @@ public class Mover : MonoBehaviour
             grabbed = true;
             settled = false;
             lastInteracted = Time.time;
+            GameObject.FindObjectOfType<GameLogic>().EnableRobot(false);
         }
 
     }
