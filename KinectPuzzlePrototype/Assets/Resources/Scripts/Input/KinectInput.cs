@@ -67,7 +67,12 @@ public class KinectInput : MonoBehaviour
         Kinect.Body[] data = _BodyManager.GetData();
         if (data == null)
         {
+            GameObject.FindObjectOfType<GameLogic>().EnableRobot(true);
             return;
+        }
+        else {
+
+            GameObject.FindObjectOfType<GameLogic>().EnableRobot(false);
         }
 
         List<ulong> trackedIds = new List<ulong>();

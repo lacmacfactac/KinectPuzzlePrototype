@@ -14,8 +14,10 @@ public class GameLogic : MonoBehaviour
     public bool waitingForReset = false;
     bool firstRun = true;
     public GameObject winAnimation;
+    float lastPerformedRobot = 0;
     public float averageAllowedIdleTime = 10;
     float realIdleTime;
+    bool robotEnabled = false;
     // Start is called before the first frame update
     void Start()
     {
@@ -51,10 +53,6 @@ public class GameLogic : MonoBehaviour
             float maxIdleTime = 0;
             for (int i = 0; i < puzzleSockets.Length; i++)
             {
-                float idleTime = puzzleSockets[i].GetComponent<Mover>().TimeSinceLastIntraction();
-                if (idleTime > maxIdleTime) {
-                    maxIdleTime = idleTime;
-                }
                 int next = (i + 1) % puzzleSockets.Length;
                 if (
                     puzzleSockets[i].GetComponent<Mover>().GetState() != -1 &&
@@ -65,12 +63,10 @@ public class GameLogic : MonoBehaviour
                 }
             }
 
-            if (maxIdleTime > realIdleTime) {
-                realIdleTime = Mathf.Lerp(averageAllowedIdleTime/2, averageAllowedIdleTime*2, Random.value);
+            if (robotEnabled && Time.time-lastPerformedRobot > realIdleTime) {
+                lastPerformedRobot = Time.time;
+                realIdleTime = Mathf.Lerp(averageAllowedIdleTime / 2, averageAllowedIdleTime * 2, Random.value);
                 puzzleSockets[(int)Random.Range(0, puzzleSockets.Length - 1)].GetComponent<Mover>().SetToRandom();
-                foreach (Mover mover in GameObject.FindObjectsOfType<Mover>()) {
-                    mover.MockInteract();
-                }
             }
 
             if (correctSolution)
@@ -95,11 +91,19 @@ public class GameLogic : MonoBehaviour
     {
         Debug.Log("Game logic reset");
     }
-    
+
     IEnumerator ScramblingRoutine(GameObject g, float delay)
     {
         yield return new WaitForSeconds(delay);
-            g.GetComponent<Mover>().SetToRandom();
+        g.GetComponent<Mover>().SetToRandom();
         waitingForReset = false;
+    }
+
+    public void EnableRobot(bool value)
+    {
+        if (value != robotEnabled) {
+            lastPerformedRobot = Time.time;
+        }
+        robotEnabled = value;
     }
 }
