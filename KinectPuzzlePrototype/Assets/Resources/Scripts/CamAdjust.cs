@@ -28,15 +28,16 @@ public class CamAdjust : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        cam = Camera.main;
         param = new CamParameters();
-        if (File.Exists(Application.dataPath + "/Saves/CamParam.json"))
+        if (File.Exists(Application.dataPath + "/CamParam.json"))
         {
-            param = Load(Application.dataPath + "/Saves/CamParam.json");
+            param = Load(Application.dataPath + "/CamParam.json");
         }
         else {
-            param.rot = transform.rotation;
-            param.pos = transform.position;
-            Save(param, Application.dataPath + "/Saves/CamParam.json");
+            param.rot = cam.transform.rotation;
+            param.pos = cam.transform.position;
+            Save(param, Application.dataPath + "/CamParam.json");
         }
 
         stepSize = Mathf.Pow(10, param.stepSizePower);
@@ -52,7 +53,7 @@ public class CamAdjust : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.I))
         {
             changed = true;
-            param = Load(Application.dataPath + "/Saves/CamParam.json");
+            param = Load(Application.dataPath + "/CamParam.json");
         }
 
         if (Input.GetKeyDown(KeyCode.T))
@@ -148,7 +149,7 @@ public class CamAdjust : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.O))
         {
             changed = true;
-            Save(param, Application.dataPath + "/Saves/CamParam.json");
+            Save(param, Application.dataPath + "/CamParam.json");
         }
 
 
@@ -157,9 +158,9 @@ public class CamAdjust : MonoBehaviour
         if (changed) {
             changed = !changed;
             stepSize = Mathf.Pow(10, param.stepSizePower);
-            transform.position = param.pos;
+            cam.transform.position = param.pos;
             cam.focalLength = param.focal;
-            transform.rotation = param.rot;
+            cam.transform.rotation = param.rot;
             GameObject.FindObjectOfType<KinectInput>().zoom = param.kinectZoom;
         }
     }

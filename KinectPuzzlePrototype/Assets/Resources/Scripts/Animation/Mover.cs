@@ -154,8 +154,8 @@ public class Mover : MonoBehaviour
 
 
         }
-        float localScaleSetpoint = !grabbed || settled ? 1 : 0.8f;
-        Vector3 posSetpoint = !grabbed || settled ? defaultPos : defaultPos + displacement;
+        float localScaleSetpoint = !grabbed && settled ? 1 : 0.8f;
+        Vector3 posSetpoint = !grabbed && settled ? defaultPos : defaultPos + displacement;
         transform.position = Vector3.Lerp(transform.position, posSetpoint, Time.deltaTime * 5);
         transform.localScale = Vector3.Lerp(transform.localScale, Vector3.one * localScaleSetpoint, Time.deltaTime * 5);
     }
