@@ -21,9 +21,12 @@ public class HandStateTracker : MonoBehaviour
     bool grabFlag = false;
     bool releaseFlag = false;
     bool flipFlop = true;
-    bool visible = false;
+    bool visible = true;
     Vector3 ringScaleTarget;
     GameLogic gameLogic;
+    
+    float dampenedState = 0; // 0 not grabbed, 1 grabbed
+    float switchAfter = 0.2f;
 
     public Kinect.HandState State
     {
@@ -36,25 +39,16 @@ public class HandStateTracker : MonoBehaviour
             switch (value)
             {
                 case Kinect.HandState.Closed:
-                    visible = true;
-                    if (state != value){
-                        grabFlag = true;
-                    }
+                        dampenedState = 1;
+                    
 
                     break;
                 case Kinect.HandState.Open:
-                    visible = true;
-                    if (state != value) {
-                        releaseFlag = true;
-                    }
                     break;
                 default:
-                    releaseFlag = true;
-                    visible = false;
                     break;
 
             }
-            state = value;
         }
     }
 
@@ -74,11 +68,35 @@ public class HandStateTracker : MonoBehaviour
             t.gameObject.GetComponent<Image>().color = holder;
         }
         ring = hand.transform.GetChild(hand.transform.childCount-1).gameObject;
+        if (mockHand) {
+            visible = false;
+        }
     }
 
     // Update is called once per frame
     void Update()
     {
+            dampenedState = Mathf.Clamp01(dampenedState - Time.deltaTime / switchAfter);
+
+        if (dampenedState > 0)
+        {
+            if (state != Kinect.HandState.Closed) {
+                state = Kinect.HandState.Closed;
+                grabFlag = true;
+            }
+        }
+        else
+        {
+            if (state != Kinect.HandState.Open)
+            {
+                state = Kinect.HandState.Open;
+                releaseFlag = true;
+            }
+
+        }
+
+
+
         Vector3 screenPoint = Camera.main.WorldToScreenPoint(transform.position);
         Ray ray = Camera.main.ScreenPointToRay(screenPoint);
         RaycastHit hit;
@@ -87,11 +105,13 @@ public class HandStateTracker : MonoBehaviour
         if (mockHand) {
             if (Input.GetKeyDown(KeyCode.Mouse0))
             {
+                visible = true;
                 State = Kinect.HandState.Closed;
             }
 
             if (Input.GetKeyUp(KeyCode.Mouse0))
             {
+                visible = false;
                 State = Kinect.HandState.Open;
             }
         }
@@ -136,14 +156,18 @@ public class HandStateTracker : MonoBehaviour
         {
             dragValue = screenPoint.x - startPos.x;
             if (moverScript.grabber = gameObject) {
-                moverScript.Drag(dragValue, .005f, gameObject);
+                moverScript.Drag(dragValue, .01f, gameObject);
             }
             }
 
     }
     private void OnDestroy()
     {
+        Debug.Log("Handstate tracker destroyed");
+        if (moverScript != null) { 
         moverScript.Release();
+        }
         Destroy(hand);
+        Destroy(ring);
     }
 }

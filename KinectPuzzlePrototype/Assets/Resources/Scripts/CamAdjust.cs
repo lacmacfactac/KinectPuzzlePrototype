@@ -12,7 +12,7 @@ public class CamParameters {
     public Vector3 pos = new Vector3(0,0,8.84f);
     public Quaternion rot = new Quaternion(0,1,0,0);
     public float focal = 17.7f;
-    public float kinectZoom = 2;
+    public float kinectZoom = 7;
 
 }
 

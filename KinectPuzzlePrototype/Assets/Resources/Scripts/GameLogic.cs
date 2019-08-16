@@ -84,6 +84,7 @@ public class GameLogic : MonoBehaviour
         for (int i = 0; i < puzzleSockets.Length; i++)
         {
             StartCoroutine(ScramblingRoutine(puzzleSockets[i], i * 0.15f));
+            StartCoroutine(ScramblingRoutine(puzzleSockets[i],1 + i * 0.15f));
         }
     }
 
