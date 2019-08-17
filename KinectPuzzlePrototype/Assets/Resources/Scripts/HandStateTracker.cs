@@ -107,12 +107,14 @@ public class HandStateTracker : MonoBehaviour
             {
                 visible = true;
                 State = Kinect.HandState.Closed;
+                gameLogic.SleepRobot(gameObject);
             }
 
             if (Input.GetKeyUp(KeyCode.Mouse0))
             {
                 visible = false;
                 State = Kinect.HandState.Open;
+                gameLogic.SleepRobot(gameObject);
             }
         }
 

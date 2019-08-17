@@ -11,6 +11,7 @@ public class Mover : MonoBehaviour
     public bool grabbed = false;
     int stateCount;
     public int state = 0;
+    public int orderedState = 0;
     Transform[] children;
 
 
@@ -115,7 +116,7 @@ public class Mover : MonoBehaviour
         }
         else
         {
-            localPhase = stateCount - (Mathf.Abs(localPhase) % stateCount);
+            localPhase = (stateCount - (Mathf.Abs(localPhase) % stateCount))%stateCount;
         }
 
 
@@ -126,6 +127,7 @@ public class Mover : MonoBehaviour
         if (!grabbed && settled)
         {
             state = temporaryState;
+            orderedState = order[state];
         }
 
 
@@ -135,8 +137,8 @@ public class Mover : MonoBehaviour
 
         for (int i = 0; i < stateCount; i++)
         {
-            //int wrappedState = order[(i + temporaryState + stateCount - 1) % stateCount];
-            int wrappedState = (i + temporaryState + stateCount - 1) % stateCount;
+            int wrappedState = order[(i + temporaryState + stateCount - 1) % stateCount];
+            //int wrappedState = (i + temporaryState + stateCount - 1) % stateCount;
             if (i == 1 || grabber != null || !settled)
             {
 
@@ -180,7 +182,7 @@ public class Mover : MonoBehaviour
             grabbed = true;
             settled = false;
             lastInteracted = Time.time;
-            GameObject.FindObjectOfType<GameLogic>().EnableRobot(false);
+            GameObject.FindObjectOfType<GameLogic>().SleepRobot(gameObject);
         }
 
     }
@@ -226,8 +228,8 @@ public class Mover : MonoBehaviour
     {
         if (settled && !grabbed)
         {
-            //return order[state];
-            return state;
+            return order[state];
+            //return state;
         }
         else
         {

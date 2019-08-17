@@ -15,9 +15,10 @@ public class GameLogic : MonoBehaviour
     bool firstRun = true;
     public GameObject winAnimation;
     float lastPerformedRobot = 0;
-    public float averageAllowedIdleTime = 10;
+    public float averageAllowedIdleTime = 5;
     float realIdleTime;
     bool robotEnabled = false;
+    float robotSleepTime = 0;
     // Start is called before the first frame update
     void Start()
     {
@@ -35,6 +36,15 @@ public class GameLogic : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        robotSleepTime -= Time.deltaTime;
+        robotSleepTime = robotSleepTime < 0 ? 0 : robotSleepTime;
+        if (robotSleepTime == 0)
+        {
+            robotEnabled = true;
+        }
+        else {
+            robotEnabled = false;
+        }
         /*
         if (firstRun) {
             firstRun = false;
@@ -100,11 +110,31 @@ public class GameLogic : MonoBehaviour
         waitingForReset = false;
     }
 
+    /*
     public void EnableRobot(bool value)
     {
         if (value != robotEnabled) {
             lastPerformedRobot = Time.time;
         }
         robotEnabled = value;
+    }
+    */
+
+    public void SleepRobot(GameObject caller)
+    {
+        Debug.Log("Robot put to sleep by " + caller.name);
+        SleepRobot(5);
+
+    }
+    public void SleepRobot(float delay)
+    {
+        robotSleepTime = delay;
+        lastPerformedRobot = Time.time;
+
+    }
+
+    public bool IsRobotAwake() {
+
+        return robotEnabled;
     }
 }

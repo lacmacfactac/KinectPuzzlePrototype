@@ -180,7 +180,7 @@ public class CamAdjust : MonoBehaviour
     {
         if (Time.time < printUntil)
         {
-            Rect posDataArea = new Rect(40, Screen.height / 2 - 200, 200, 500);
+            Rect posDataArea = new Rect(40, 0 , 200, 500);
             string data =
                 "   [W]   [R]\n" +
                 "[A][S][D][F]\n" +
@@ -210,7 +210,9 @@ public class CamAdjust : MonoBehaviour
                 "Scramble now\n" +
                 "\n" +
                 "[ESC]\n" +
-                "Quit"
+                "Quit" + 
+                "\n" + 
+                ((GameObject.FindObjectOfType<GameLogic>().IsRobotAwake() == true) ? "Robot awake" : "Robot asleep") 
                 ;
             GUI.contentColor = Color.green;
             GUI.Label(posDataArea, data);

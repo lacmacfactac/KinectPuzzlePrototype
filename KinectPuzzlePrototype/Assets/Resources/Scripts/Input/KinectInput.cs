@@ -67,12 +67,10 @@ public class KinectInput : MonoBehaviour
         Kinect.Body[] data = _BodyManager.GetData();
         if (data == null)
         {
-            GameObject.FindObjectOfType<GameLogic>().EnableRobot(true);
             return;
         }
         else {
 
-            GameObject.FindObjectOfType<GameLogic>().EnableRobot(false);
         }
 
         List<ulong> trackedIds = new List<ulong>();
@@ -87,6 +85,10 @@ public class KinectInput : MonoBehaviour
             {
                 trackedIds.Add(body.TrackingId);
             }
+        }
+        if (trackedIds.Count > 0)
+        {
+            GameObject.FindObjectOfType<GameLogic>().SleepRobot(gameObject);
         }
 
         List<ulong> knownIds = new List<ulong>(_Bodies.Keys);
