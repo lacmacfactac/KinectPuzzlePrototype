@@ -39,6 +39,7 @@ public class Mover : MonoBehaviour
 
     private void Awake()
     {
+        stateCount = transform.childCount;
         //   clip = Resources.LoadAsync("Audio/Drag.wav") as AudioClip;
     }
 
@@ -48,7 +49,6 @@ public class Mover : MonoBehaviour
         //audioSource = gameObject.AddComponent<AudioSource>();
         //audioSource.clip = clip;
         scaleSetpoint = 1;
-        stateCount = transform.childCount;
         order = new int[stateCount];
         for (int i = 0; i < order.Length; i++)
         {
@@ -137,8 +137,8 @@ public class Mover : MonoBehaviour
 
         for (int i = 0; i < stateCount; i++)
         {
-            int wrappedState = order[(i + temporaryState + stateCount - 1) % stateCount];
-            //int wrappedState = (i + temporaryState + stateCount - 1) % stateCount;
+            //int wrappedState = order[(i + temporaryState + stateCount - 1) % stateCount];
+            int wrappedState = (i + temporaryState + stateCount - 1) % stateCount;
             if (i == 1 || grabber != null || !settled)
             {
 
@@ -210,13 +210,13 @@ public class Mover : MonoBehaviour
         Debug.Log("Jumpig to state " + s);
         grabbed = false;
         settled = false;
-        targetPhase = phase + (s - (phase % stateCount));
+        targetPhase = phase-(phase%stateCount)+((state + s)%stateCount);
         lastInteracted = Time.time;
 
     }
     public void SetToRandom()
     {
-        int s = (int)((Random.value * (stateCount) + 1));
+        int s = (int)(1+(Random.value * (stateCount-1)));
         Set(s);
 
     }
@@ -228,8 +228,8 @@ public class Mover : MonoBehaviour
     {
         if (settled && !grabbed)
         {
-            return order[state];
-            //return state;
+            //return order[state];
+            return state;
         }
         else
         {

@@ -15,10 +15,12 @@ public class GameLogic : MonoBehaviour
     bool firstRun = true;
     public GameObject winAnimation;
     float lastPerformedRobot = 0;
-    public float averageAllowedIdleTime = 5;
+    public float averageAllowedIdleTime = 3;
     float realIdleTime;
     bool robotEnabled = false;
+    bool scrambleRan = false;
     float robotSleepTime = 0;
+    int runningCoroutines = 0;
     // Start is called before the first frame update
     void Start()
     {
@@ -51,6 +53,7 @@ public class GameLogic : MonoBehaviour
             Scramble();
         }
         */
+
         if (!waitingForReset)
         {
 
@@ -86,6 +89,13 @@ public class GameLogic : MonoBehaviour
                 //solutionHandler.Solve(solutionIndex);
             }
         }
+
+
+        if (scrambleRan && runningCoroutines <= 0) {
+            runningCoroutines = 0;
+            waitingForReset = false;
+            scrambleRan = false;
+        }
     }
 
     public void Scramble()
@@ -94,8 +104,11 @@ public class GameLogic : MonoBehaviour
         for (int i = 0; i < puzzleSockets.Length; i++)
         {
             StartCoroutine(ScramblingRoutine(puzzleSockets[i], i * 0.15f));
+            runningCoroutines += 1;
             StartCoroutine(ScramblingRoutine(puzzleSockets[i],1 + i * 0.15f));
+            runningCoroutines += 1;
         }
+        scrambleRan = true;
     }
 
     public void Reset()
@@ -107,7 +120,7 @@ public class GameLogic : MonoBehaviour
     {
         yield return new WaitForSeconds(delay);
         g.GetComponent<Mover>().SetToRandom();
-        waitingForReset = false;
+        runningCoroutines -= 1;
     }
 
     /*
