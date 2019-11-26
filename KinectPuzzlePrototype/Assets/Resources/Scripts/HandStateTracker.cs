@@ -57,7 +57,6 @@ public class HandStateTracker : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        gameLogic = GameObject.FindObjectOfType<GameLogic>();
         ringScaleTarget = Vector3.one;
         startPos = Vector3.zero;
         hand = Instantiate(Resources.Load<GameObject>("Objects/Hand_marker") as GameObject, GameObject.Find("Canvas").transform);
@@ -76,7 +75,9 @@ public class HandStateTracker : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-            dampenedState = Mathf.Clamp01(dampenedState - Time.deltaTime / switchAfter);
+        gameLogic = GameObject.FindObjectOfType<GameLogic>();
+
+        dampenedState = Mathf.Clamp01(dampenedState - Time.deltaTime / switchAfter);
 
         if (dampenedState > 0)
         {

@@ -1,0 +1,292 @@
+fileFormatVersion: 2
+guid: 3aa73972539244a44928ca4793262120
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: Cube.002
+    100002: Cube.008
+    100004: Cube.010
+    100006: Cube.011
+    100008: Cube.023
+    100010: Cube.031
+    100012: Cube.044
+    100014: Cube.064
+    100016: Cube.089
+    100018: Cube.122
+    100020: Cube.128
+    100022: Cube.131
+    100024: Cube.241
+    100026: Cube.243
+    100028: Cube.249
+    100030: Cube.260
+    100032: Cube.261
+    100034: Cube.264
+    100036: Cube.266
+    100038: Cube.273
+    100040: Cube.281
+    100042: Cube.288
+    100044: Cube.289
+    100046: Cube.323
+    100048: Element_western@Origin_A00
+    100050: Element_western@Origin_A01
+    100052: Element_western@Origin_A02
+    100054: Element_western@Origin_A03
+    100056: Element_western@Origin_A04
+    100058: Element_western@Origin_A05
+    100060: Element_western@Origin_A06
+    100062: Element_western@Origin_A07
+    100064: Element_western@Origin_A08
+    100066: Element_western@Origin_B00
+    100068: Element_western@Origin_B01
+    100070: Element_western@Origin_B02
+    100072: Element_western@Origin_B03
+    100074: Element_western@Origin_B04
+    100076: Element_western@Origin_B05
+    100078: Element_western@Origin_B06
+    100080: Element_western@Origin_B07
+    100082: Element_western@Origin_B08
+    100084: Element_western@Origin_C00
+    100086: Element_western@Origin_C01
+    100088: Element_western@Origin_C02
+    100090: Element_western@Origin_C03
+    100092: Element_western@Origin_C04
+    100094: Element_western@Origin_C05
+    100096: Element_western@Origin_C06
+    100098: Element_western@Origin_C07
+    100100: Element_western@Origin_C08
+    100102: Plane
+    100104: //RootNode
+    100106: Wheels - Large.004
+    100108: Wheels - Large.006
+    400000: Cube.002
+    400002: Cube.008
+    400004: Cube.010
+    400006: Cube.011
+    400008: Cube.023
+    400010: Cube.031
+    400012: Cube.044
+    400014: Cube.064
+    400016: Cube.089
+    400018: Cube.122
+    400020: Cube.128
+    400022: Cube.131
+    400024: Cube.241
+    400026: Cube.243
+    400028: Cube.249
+    400030: Cube.260
+    400032: Cube.261
+    400034: Cube.264
+    400036: Cube.266
+    400038: Cube.273
+    400040: Cube.281
+    400042: Cube.288
+    400044: Cube.289
+    400046: Cube.323
+    400048: Element_western@Origin_A00
+    400050: Element_western@Origin_A01
+    400052: Element_western@Origin_A02
+    400054: Element_western@Origin_A03
+    400056: Element_western@Origin_A04
+    400058: Element_western@Origin_A05
+    400060: Element_western@Origin_A06
+    400062: Element_western@Origin_A07
+    400064: Element_western@Origin_A08
+    400066: Element_western@Origin_B00
+    400068: Element_western@Origin_B01
+    400070: Element_western@Origin_B02
+    400072: Element_western@Origin_B03
+    400074: Element_western@Origin_B04
+    400076: Element_western@Origin_B05
+    400078: Element_western@Origin_B06
+    400080: Element_western@Origin_B07
+    400082: Element_western@Origin_B08
+    400084: Element_western@Origin_C00
+    400086: Element_western@Origin_C01
+    400088: Element_western@Origin_C02
+    400090: Element_western@Origin_C03
+    400092: Element_western@Origin_C04
+    400094: Element_western@Origin_C05
+    400096: Element_western@Origin_C06
+    400098: Element_western@Origin_C07
+    400100: Element_western@Origin_C08
+    400102: Plane
+    400104: //RootNode
+    400106: Wheels - Large.004
+    400108: Wheels - Large.006
+    2100000: western wood 03
+    2100002: western light brown
+    2100004: western glass
+    2100006: western wood 01
+    2100008: western dark
+    2100010: western brown
+    2100012: western wood 02
+    2100014: western yellow
+    2100016: western metal
+    2100018: western black
+    2300000: Cube.002
+    2300002: Cube.008
+    2300004: Cube.010
+    2300006: Cube.011
+    2300008: Cube.023
+    2300010: Cube.031
+    2300012: Cube.044
+    2300014: Cube.064
+    2300016: Cube.089
+    2300018: Cube.122
+    2300020: Cube.128
+    2300022: Cube.131
+    2300024: Cube.241
+    2300026: Cube.243
+    2300028: Cube.249
+    2300030: Cube.260
+    2300032: Cube.261
+    2300034: Cube.264
+    2300036: Cube.266
+    2300038: Cube.273
+    2300040: Cube.281
+    2300042: Cube.288
+    2300044: Cube.289
+    2300046: Cube.323
+    2300048: Plane
+    2300050: Wheels - Large.004
+    2300052: Wheels - Large.006
+    3300000: Cube.002
+    3300002: Cube.008
+    3300004: Cube.010
+    3300006: Cube.011
+    3300008: Cube.023
+    3300010: Cube.031
+    3300012: Cube.044
+    3300014: Cube.064
+    3300016: Cube.089
+    3300018: Cube.122
+    3300020: Cube.128
+    3300022: Cube.131
+    3300024: Cube.241
+    3300026: Cube.243
+    3300028: Cube.249
+    3300030: Cube.260
+    3300032: Cube.261
+    3300034: Cube.264
+    3300036: Cube.266
+    3300038: Cube.273
+    3300040: Cube.281
+    3300042: Cube.288
+    3300044: Cube.289
+    3300046: Cube.323
+    3300048: Plane
+    3300050: Wheels - Large.004
+    3300052: Wheels - Large.006
+    4300000: Cube.288
+    4300002: Cube.264
+    4300004: Cube.289
+    4300006: Cube.044
+    4300008: Cube.249
+    4300010: Wheels - Large.004
+    4300012: Cube.008
+    4300014: Cube.122
+    4300016: Cube.131
+    4300018: Cube.064
+    4300020: Cube.266
+    4300022: Cube.273
+    4300024: Cube.031
+    4300026: Cube.023
+    4300028: Wheels - Large.006
+    4300030: Cube.011
+    4300032: Cube.260
+    4300034: Cube.261
+    4300036: Cube.089
+    4300038: Plane
+    4300040: Cube.281
+    4300042: Cube.010
+    4300044: Cube.002
+    4300046: Cube.323
+    4300048: Cube.128
+    4300050: Cube.241
+    4300052: Cube.243
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

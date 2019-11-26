@@ -1,0 +1,436 @@
+fileFormatVersion: 2
+guid: 5ebdfe31aa738824e815f764da122293
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: 00kiskerites.003
+    100002: _Knob.033
+    100004: Antenna 1 x 4 - Flat Top.015
+    100006: Brick 2x2.003
+    100008: Brick 2x2.007
+    100010: Brick 2x2.013
+    100012: Brick 2x2.067
+    100014: Brick 2x2.068
+    100016: Brick 2x4.000
+    100018: Brick 2x4.001
+    100020: Brick 2x4.003
+    100022: Brick 2x4.008
+    100024: Brick 2x4.037
+    100026: Brick 2x4.039
+    100028: Brick 2x4.079
+    100030: Brick 2x4.093
+    100032: Brick 2x4.149
+    100034: Brick Round 1x1 Open Stud.003
+    100036: Brick Round 1x1 Open Stud.025
+    100038: Cube.002
+    100040: Cube.005
+    100042: Cube.013
+    100044: Cube.017
+    100046: Cube.021
+    100048: Cube.028
+    100050: Cube.029
+    100052: Cube.030
+    100054: Element_LEGO@Origin_A00
+    100056: Element_LEGO@Origin_A01
+    100058: Element_LEGO@Origin_A02
+    100060: Element_LEGO@Origin_A03
+    100062: Element_LEGO@Origin_A04
+    100064: Element_LEGO@Origin_A05
+    100066: Element_LEGO@Origin_A06
+    100068: Element_LEGO@Origin_A07
+    100070: Element_LEGO@Origin_A08
+    100072: Element_LEGO@Origin_B00
+    100074: Element_LEGO@Origin_B01
+    100076: Element_LEGO@Origin_B02
+    100078: Element_LEGO@Origin_B03
+    100080: Element_LEGO@Origin_B04
+    100082: Element_LEGO@Origin_B05
+    100084: Element_LEGO@Origin_B06
+    100086: Element_LEGO@Origin_B07
+    100088: Element_LEGO@Origin_B08
+    100090: Element_LEGO@Origin_C00
+    100092: Element_LEGO@Origin_C01
+    100094: Element_LEGO@Origin_C02
+    100096: Element_LEGO@Origin_C03
+    100098: Element_LEGO@Origin_C04
+    100100: Element_LEGO@Origin_C05
+    100102: Element_LEGO@Origin_C06
+    100104: Element_LEGO@Origin_C07
+    100106: Element_LEGO@Origin_C08
+    100108: //RootNode
+    100110: 00kiskerites.001
+    100112: Brick 2x2.099
+    100114: Brick 2x4.147
+    100116: Element_lego@Origin_A00
+    100118: Element_lego@Origin_A01
+    100120: Element_lego@Origin_A02
+    100122: Element_lego@Origin_A03
+    100124: Element_lego@Origin_A04
+    100126: Element_lego@Origin_A05
+    100128: Element_lego@Origin_A06
+    100130: Element_lego@Origin_A07
+    100132: Element_lego@Origin_A08
+    100134: Element_lego@Origin_B00
+    100136: Element_lego@Origin_B01
+    100138: Element_lego@Origin_B02
+    100140: Element_lego@Origin_B03
+    100142: Element_lego@Origin_B04
+    100144: Element_lego@Origin_B05
+    100146: Element_lego@Origin_B06
+    100148: Element_lego@Origin_B07
+    100150: Element_lego@Origin_B08
+    100152: Element_lego@Origin_C00
+    100154: Element_lego@Origin_C01
+    100156: Element_lego@Origin_C02
+    100158: Element_lego@Origin_C03
+    100160: Element_lego@Origin_C04
+    100162: Element_lego@Origin_C05
+    100164: Element_lego@Origin_C06
+    100166: Element_lego@Origin_C07
+    100168: Element_lego@Origin_C08
+    400000: 00kiskerites.003
+    400002: _Knob.033
+    400004: Antenna 1 x 4 - Flat Top.015
+    400006: Brick 2x2.003
+    400008: Brick 2x2.007
+    400010: Brick 2x2.013
+    400012: Brick 2x2.067
+    400014: Brick 2x2.068
+    400016: Brick 2x4.000
+    400018: Brick 2x4.001
+    400020: Brick 2x4.003
+    400022: Brick 2x4.008
+    400024: Brick 2x4.037
+    400026: Brick 2x4.039
+    400028: Brick 2x4.079
+    400030: Brick 2x4.093
+    400032: Brick 2x4.149
+    400034: Brick Round 1x1 Open Stud.003
+    400036: Brick Round 1x1 Open Stud.025
+    400038: Cube.002
+    400040: Cube.005
+    400042: Cube.013
+    400044: Cube.017
+    400046: Cube.021
+    400048: Cube.028
+    400050: Cube.029
+    400052: Cube.030
+    400054: Element_LEGO@Origin_A00
+    400056: Element_LEGO@Origin_A01
+    400058: Element_LEGO@Origin_A02
+    400060: Element_LEGO@Origin_A03
+    400062: Element_LEGO@Origin_A04
+    400064: Element_LEGO@Origin_A05
+    400066: Element_LEGO@Origin_A06
+    400068: Element_LEGO@Origin_A07
+    400070: Element_LEGO@Origin_A08
+    400072: Element_LEGO@Origin_B00
+    400074: Element_LEGO@Origin_B01
+    400076: Element_LEGO@Origin_B02
+    400078: Element_LEGO@Origin_B03
+    400080: Element_LEGO@Origin_B04
+    400082: Element_LEGO@Origin_B05
+    400084: Element_LEGO@Origin_B06
+    400086: Element_LEGO@Origin_B07
+    400088: Element_LEGO@Origin_B08
+    400090: Element_LEGO@Origin_C00
+    400092: Element_LEGO@Origin_C01
+    400094: Element_LEGO@Origin_C02
+    400096: Element_LEGO@Origin_C03
+    400098: Element_LEGO@Origin_C04
+    400100: Element_LEGO@Origin_C05
+    400102: Element_LEGO@Origin_C06
+    400104: Element_LEGO@Origin_C07
+    400106: Element_LEGO@Origin_C08
+    400108: //RootNode
+    400110: 00kiskerites.001
+    400112: Brick 2x2.099
+    400114: Brick 2x4.147
+    400116: Element_lego@Origin_A00
+    400118: Element_lego@Origin_A01
+    400120: Element_lego@Origin_A02
+    400122: Element_lego@Origin_A03
+    400124: Element_lego@Origin_A04
+    400126: Element_lego@Origin_A05
+    400128: Element_lego@Origin_A06
+    400130: Element_lego@Origin_A07
+    400132: Element_lego@Origin_A08
+    400134: Element_lego@Origin_B00
+    400136: Element_lego@Origin_B01
+    400138: Element_lego@Origin_B02
+    400140: Element_lego@Origin_B03
+    400142: Element_lego@Origin_B04
+    400144: Element_lego@Origin_B05
+    400146: Element_lego@Origin_B06
+    400148: Element_lego@Origin_B07
+    400150: Element_lego@Origin_B08
+    400152: Element_lego@Origin_C00
+    400154: Element_lego@Origin_C01
+    400156: Element_lego@Origin_C02
+    400158: Element_lego@Origin_C03
+    400160: Element_lego@Origin_C04
+    400162: Element_lego@Origin_C05
+    400164: Element_lego@Origin_C06
+    400166: Element_lego@Origin_C07
+    400168: Element_lego@Origin_C08
+    2100000: lego yellow
+    2100002: lego black
+    2100004: lego dark blue
+    2100006: lego red
+    2100008: lego white
+    2100010: lego glass
+    2100012: lego green
+    2100014: lego orange
+    2100016: lego blue
+    2100018: lego green2
+    2100020: lego szurke
+    2100022: lego dark blue.001
+    2100024: lego brown
+    2100026: lego pink
+    2300000: 00kiskerites.003
+    2300002: _Knob.033
+    2300004: Antenna 1 x 4 - Flat Top.015
+    2300006: Brick 2x2.003
+    2300008: Brick 2x2.007
+    2300010: Brick 2x2.013
+    2300012: Brick 2x2.067
+    2300014: Brick 2x2.068
+    2300016: Brick 2x4.000
+    2300018: Brick 2x4.001
+    2300020: Brick 2x4.003
+    2300022: Brick 2x4.008
+    2300024: Brick 2x4.037
+    2300026: Brick 2x4.039
+    2300028: Brick 2x4.079
+    2300030: Brick 2x4.093
+    2300032: Brick 2x4.149
+    2300034: Brick Round 1x1 Open Stud.003
+    2300036: Brick Round 1x1 Open Stud.025
+    2300038: Cube.002
+    2300040: Cube.005
+    2300042: Cube.013
+    2300044: Cube.017
+    2300046: Cube.021
+    2300048: Cube.028
+    2300050: Cube.029
+    2300052: Cube.030
+    2300054: 00kiskerites.001
+    2300056: Brick 2x2.099
+    2300058: Brick 2x4.147
+    3300000: 00kiskerites.003
+    3300002: _Knob.033
+    3300004: Antenna 1 x 4 - Flat Top.015
+    3300006: Brick 2x2.003
+    3300008: Brick 2x2.007
+    3300010: Brick 2x2.013
+    3300012: Brick 2x2.067
+    3300014: Brick 2x2.068
+    3300016: Brick 2x4.000
+    3300018: Brick 2x4.001
+    3300020: Brick 2x4.003
+    3300022: Brick 2x4.008
+    3300024: Brick 2x4.037
+    3300026: Brick 2x4.039
+    3300028: Brick 2x4.079
+    3300030: Brick 2x4.093
+    3300032: Brick 2x4.149
+    3300034: Brick Round 1x1 Open Stud.003
+    3300036: Brick Round 1x1 Open Stud.025
+    3300038: Cube.002
+    3300040: Cube.005
+    3300042: Cube.013
+    3300044: Cube.017
+    3300046: Cube.021
+    3300048: Cube.028
+    3300050: Cube.029
+    3300052: Cube.030
+    3300054: 00kiskerites.001
+    3300056: Brick 2x2.099
+    3300058: Brick 2x4.147
+    4300000: Brick 2x4.039
+    4300002: Cube.013
+    4300004: Cube.017
+    4300006: Brick Round 1x1 Open Stud.025
+    4300008: Brick Round 1x1 Open Stud.003
+    4300010: Brick 2x2.003
+    4300012: Antenna 1 x 4 - Flat Top.015
+    4300014: Cube.029
+    4300016: Cube.030
+    4300018: Brick 2x4.008
+    4300020: Brick 2x4.037
+    4300022: Brick 2x2.007
+    4300024: _Knob.033
+    4300026: Brick 2x2.013
+    4300028: Brick 2x4.079
+    4300030: Cube.028
+    4300032: Cube.002
+    4300034: Cube.005
+    4300036: Brick 2x4.000
+    4300038: Brick 2x4.001
+    4300040: Cube.021
+    4300042: Brick 2x4.003
+    4300044: Brick 2x4.093
+    4300046: Brick 2x4.149
+    4300048: 00kiskerites.003
+    4300050: Brick 2x2.068
+    4300052: Brick 2x2.067
+    4300054: 00kiskerites.001
+    4300056: Brick 2x2.099
+    4300058: Brick 2x4.147
+    2186277476908879412: ImportLogs
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: lego black
+    second: {fileID: 2100000, guid: cde5812a98b6a564d8bea7aaef03adfc, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: lego blue
+    second: {fileID: 2100000, guid: 30b28d510128f674289a4b4c7d4fec45, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: lego brown
+    second: {fileID: 2100000, guid: 25f1d5692902bd7459f2fe8b6f2cb1af, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: lego dark blue
+    second: {fileID: 2100000, guid: 63206ef50b8bfa6419ee108d18fd833a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: lego dark blue.001
+    second: {fileID: 2100000, guid: d109027f086bd134eafa38fbc81d4fbd, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: lego glass
+    second: {fileID: 2100000, guid: cc0fbc7af1c81de47b1a5e29ae3e2ef3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: lego green
+    second: {fileID: 2100000, guid: 2ea2946668410c444874fd3d59fe948e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: lego green2
+    second: {fileID: 2100000, guid: 5c4117e93b06dbd4bbf5751671b082f8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: lego orange
+    second: {fileID: 2100000, guid: 13480cfb1c9f5a04d9702c807268a783, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: lego pink
+    second: {fileID: 2100000, guid: 5a699b7932569524c886bd0847ff4d65, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: lego red
+    second: {fileID: 2100000, guid: 0cb34dc71b60d0c40be815b291581971, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: lego szurke
+    second: {fileID: 2100000, guid: 177985dc3c7794347904e131fb8c4ef9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: lego white
+    second: {fileID: 2100000, guid: e2c0d9a5ea299c543a4526cdd351f769, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: lego yellow
+    second: {fileID: 2100000, guid: e7fef70a5eb1ce94e89b23337956c8b2, type: 2}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,1105 @@
+fileFormatVersion: 2
+guid: 6c7fbed5388923c49b5e61cc7525f2a3
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: 00kiskerites.000
+    100002: 00kiskerites.001
+    100004: 00kiskerites.002
+    100006: 00kiskerites.003
+    100008: 00kiskerites.004
+    100010: 00kiskerites.005
+    100012: 00kiskerites.006
+    100014: 00kiskerites.007
+    100016: 00kiskerites.008
+    100018: 00kiskerites.009
+    100020: 00kiskerites.010
+    100022: _Knob.000
+    100024: _Knob.001
+    100026: _Knob.002
+    100028: _Knob.003
+    100030: _Knob.004
+    100032: _Knob.005
+    100034: _Knob.006
+    100036: _Knob.007
+    100038: _Knob.008
+    100040: _Knob.009
+    100042: _Knob.033
+    100044: Antenna 1 x 4 - Flat Top.005
+    100046: Antenna 1 x 4 - Flat Top.015
+    100048: Brick 2x2.000
+    100050: Brick 2x2.001
+    100052: Brick 2x2.002
+    100054: Brick 2x2.003
+    100056: Brick 2x2.004
+    100058: Brick 2x2.005
+    100060: Brick 2x2.006
+    100062: Brick 2x2.007
+    100064: Brick 2x2.008
+    100066: Brick 2x2.009
+    100068: Brick 2x2.010
+    100070: Brick 2x2.011
+    100072: Brick 2x2.012
+    100074: Brick 2x2.013
+    100076: Brick 2x2.014
+    100078: Brick 2x2.015
+    100080: Brick 2x2.016
+    100082: Brick 2x2.017
+    100084: Brick 2x2.018
+    100086: Brick 2x2.019
+    100088: Brick 2x2.020
+    100090: Brick 2x2.021
+    100092: Brick 2x2.022
+    100094: Brick 2x2.023
+    100096: Brick 2x2.024
+    100098: Brick 2x2.025
+    100100: Brick 2x2.026
+    100102: Brick 2x2.027
+    100104: Brick 2x2.028
+    100106: Brick 2x2.029
+    100108: Brick 2x2.030
+    100110: Brick 2x2.031
+    100112: Brick 2x2.032
+    100114: Brick 2x2.060
+    100116: Brick 2x2.063
+    100118: Brick 2x2.067
+    100120: Brick 2x2.068
+    100122: Brick 2x2.099
+    100124: Brick 2x2.101
+    100126: Brick 2x2.124
+    100128: Brick 2x2.128
+    100130: Brick 2x4.000
+    100132: Brick 2x4.001
+    100134: Brick 2x4.002
+    100136: Brick 2x4.003
+    100138: Brick 2x4.004
+    100140: Brick 2x4.005
+    100142: Brick 2x4.006
+    100144: Brick 2x4.007
+    100146: Brick 2x4.008
+    100148: Brick 2x4.009
+    100150: Brick 2x4.010
+    100152: Brick 2x4.011
+    100154: Brick 2x4.037
+    100156: Brick 2x4.039
+    100158: Brick 2x4.079
+    100160: Brick 2x4.093
+    100162: Brick 2x4.103
+    100164: Brick 2x4.123
+    100166: Brick 2x4.137
+    100168: Brick 2x4.141
+    100170: Brick 2x4.147
+    100172: Brick 2x4.149
+    100174: Brick Round 1x1 Open Stud.000
+    100176: Brick Round 1x1 Open Stud.001
+    100178: Brick Round 1x1 Open Stud.002
+    100180: Brick Round 1x1 Open Stud.003
+    100182: Brick Round 1x1 Open Stud.004
+    100184: Brick Round 1x1 Open Stud.005
+    100186: Brick Round 1x1 Open Stud.006
+    100188: Brick Round 1x1 Open Stud.007
+    100190: Brick Round 1x1 Open Stud.008
+    100192: Brick Round 1x1 Open Stud.009
+    100194: Brick Round 1x1 Open Stud.010
+    100196: Brick Round 1x1 Open Stud.011
+    100198: Brick Round 1x1 Open Stud.012
+    100200: Brick Round 1x1 Open Stud.013
+    100202: Brick Round 1x1 Open Stud.014
+    100204: Brick Round 1x1 Open Stud.015
+    100206: Brick Round 1x1 Open Stud.016
+    100208: Brick Round 1x1 Open Stud.017
+    100210: Brick Round 1x1 Open Stud.018
+    100212: Brick Round 1x1 Open Stud.021
+    100214: Brick Round 1x1 Open Stud.022
+    100216: Brick Round 1x1 Open Stud.023
+    100218: Brick Round 1x1 Open Stud.024
+    100220: Brick Round 1x1 Open Stud.025
+    100222: Brick Round 1x1 Open Stud.026
+    100224: Brick Round 1x1 Open Stud.027
+    100226: Cube
+    100228: Cube.002
+    100230: Cube.004
+    100232: Cube.005
+    100234: Cube.006
+    100236: Cube.007
+    100238: Cube.008
+    100240: Cube.009
+    100242: Cube.010
+    100244: Cube.012
+    100246: Cube.013
+    100248: Cube.014
+    100250: Cube.015
+    100252: Cube.016
+    100254: Cube.017
+    100256: Cube.018
+    100258: Cube.019
+    100260: Cube.020
+    100262: Cube.021
+    100264: Cube.022
+    100266: Cube.023
+    100268: Cube.024
+    100270: Cube.025
+    100272: Cube.026
+    100274: Cube.027
+    100276: Cube.028
+    100278: Cube.029
+    100280: Cube.030
+    100282: Cube.031
+    100284: Cube.032
+    100286: Cube.033
+    100288: Cube.158
+    100290: Cylinder.001
+    100292: Cylinder.002
+    100294: Cylinder.003
+    100296: Cylinder.004
+    100298: Cylinder.005
+    100300: Cylinder.006
+    100302: Cylinder.007
+    100304: Element_winterlego@Origin_A00
+    100306: Element_winterlego@Origin_A01
+    100308: Element_winterlego@Origin_A02
+    100310: Element_winterlego@Origin_A03
+    100312: Element_winterlego@Origin_A04
+    100314: Element_winterlego@Origin_A05
+    100316: Element_winterlego@Origin_A06
+    100318: Element_winterlego@Origin_A07
+    100320: Element_winterlego@Origin_A08
+    100322: Element_winterlego@Origin_A09
+    100324: Element_winterlego@Origin_B00
+    100326: Element_winterlego@Origin_B01
+    100328: Element_winterlego@Origin_B02
+    100330: Element_winterlego@Origin_B03
+    100332: Element_winterlego@Origin_B04
+    100334: Element_winterlego@Origin_B05
+    100336: Element_winterlego@Origin_B06
+    100338: Element_winterlego@Origin_B07
+    100340: Element_winterlego@Origin_B08
+    100342: Element_winterlego@Origin_C00
+    100344: Element_winterlego@Origin_C01
+    100346: Element_winterlego@Origin_C02
+    100348: Element_winterlego@Origin_C03
+    100350: Element_winterlego@Origin_C04
+    100352: Element_winterlego@Origin_C05
+    100354: Element_winterlego@Origin_C06
+    100356: Element_winterlego@Origin_C07
+    100358: Element_winterlego@Origin_C08
+    100360: lego window.000
+    100362: lego window.004
+    100364: Plane
+    100366: Plane.001
+    100368: //RootNode
+    400000: 00kiskerites.000
+    400002: 00kiskerites.001
+    400004: 00kiskerites.002
+    400006: 00kiskerites.003
+    400008: 00kiskerites.004
+    400010: 00kiskerites.005
+    400012: 00kiskerites.006
+    400014: 00kiskerites.007
+    400016: 00kiskerites.008
+    400018: 00kiskerites.009
+    400020: 00kiskerites.010
+    400022: _Knob.000
+    400024: _Knob.001
+    400026: _Knob.002
+    400028: _Knob.003
+    400030: _Knob.004
+    400032: _Knob.005
+    400034: _Knob.006
+    400036: _Knob.007
+    400038: _Knob.008
+    400040: _Knob.009
+    400042: _Knob.033
+    400044: Antenna 1 x 4 - Flat Top.005
+    400046: Antenna 1 x 4 - Flat Top.015
+    400048: Brick 2x2.000
+    400050: Brick 2x2.001
+    400052: Brick 2x2.002
+    400054: Brick 2x2.003
+    400056: Brick 2x2.004
+    400058: Brick 2x2.005
+    400060: Brick 2x2.006
+    400062: Brick 2x2.007
+    400064: Brick 2x2.008
+    400066: Brick 2x2.009
+    400068: Brick 2x2.010
+    400070: Brick 2x2.011
+    400072: Brick 2x2.012
+    400074: Brick 2x2.013
+    400076: Brick 2x2.014
+    400078: Brick 2x2.015
+    400080: Brick 2x2.016
+    400082: Brick 2x2.017
+    400084: Brick 2x2.018
+    400086: Brick 2x2.019
+    400088: Brick 2x2.020
+    400090: Brick 2x2.021
+    400092: Brick 2x2.022
+    400094: Brick 2x2.023
+    400096: Brick 2x2.024
+    400098: Brick 2x2.025
+    400100: Brick 2x2.026
+    400102: Brick 2x2.027
+    400104: Brick 2x2.028
+    400106: Brick 2x2.029
+    400108: Brick 2x2.030
+    400110: Brick 2x2.031
+    400112: Brick 2x2.032
+    400114: Brick 2x2.060
+    400116: Brick 2x2.063
+    400118: Brick 2x2.067
+    400120: Brick 2x2.068
+    400122: Brick 2x2.099
+    400124: Brick 2x2.101
+    400126: Brick 2x2.124
+    400128: Brick 2x2.128
+    400130: Brick 2x4.000
+    400132: Brick 2x4.001
+    400134: Brick 2x4.002
+    400136: Brick 2x4.003
+    400138: Brick 2x4.004
+    400140: Brick 2x4.005
+    400142: Brick 2x4.006
+    400144: Brick 2x4.007
+    400146: Brick 2x4.008
+    400148: Brick 2x4.009
+    400150: Brick 2x4.010
+    400152: Brick 2x4.011
+    400154: Brick 2x4.037
+    400156: Brick 2x4.039
+    400158: Brick 2x4.079
+    400160: Brick 2x4.093
+    400162: Brick 2x4.103
+    400164: Brick 2x4.123
+    400166: Brick 2x4.137
+    400168: Brick 2x4.141
+    400170: Brick 2x4.147
+    400172: Brick 2x4.149
+    400174: Brick Round 1x1 Open Stud.000
+    400176: Brick Round 1x1 Open Stud.001
+    400178: Brick Round 1x1 Open Stud.002
+    400180: Brick Round 1x1 Open Stud.003
+    400182: Brick Round 1x1 Open Stud.004
+    400184: Brick Round 1x1 Open Stud.005
+    400186: Brick Round 1x1 Open Stud.006
+    400188: Brick Round 1x1 Open Stud.007
+    400190: Brick Round 1x1 Open Stud.008
+    400192: Brick Round 1x1 Open Stud.009
+    400194: Brick Round 1x1 Open Stud.010
+    400196: Brick Round 1x1 Open Stud.011
+    400198: Brick Round 1x1 Open Stud.012
+    400200: Brick Round 1x1 Open Stud.013
+    400202: Brick Round 1x1 Open Stud.014
+    400204: Brick Round 1x1 Open Stud.015
+    400206: Brick Round 1x1 Open Stud.016
+    400208: Brick Round 1x1 Open Stud.017
+    400210: Brick Round 1x1 Open Stud.018
+    400212: Brick Round 1x1 Open Stud.021
+    400214: Brick Round 1x1 Open Stud.022
+    400216: Brick Round 1x1 Open Stud.023
+    400218: Brick Round 1x1 Open Stud.024
+    400220: Brick Round 1x1 Open Stud.025
+    400222: Brick Round 1x1 Open Stud.026
+    400224: Brick Round 1x1 Open Stud.027
+    400226: Cube
+    400228: Cube.002
+    400230: Cube.004
+    400232: Cube.005
+    400234: Cube.006
+    400236: Cube.007
+    400238: Cube.008
+    400240: Cube.009
+    400242: Cube.010
+    400244: Cube.012
+    400246: Cube.013
+    400248: Cube.014
+    400250: Cube.015
+    400252: Cube.016
+    400254: Cube.017
+    400256: Cube.018
+    400258: Cube.019
+    400260: Cube.020
+    400262: Cube.021
+    400264: Cube.022
+    400266: Cube.023
+    400268: Cube.024
+    400270: Cube.025
+    400272: Cube.026
+    400274: Cube.027
+    400276: Cube.028
+    400278: Cube.029
+    400280: Cube.030
+    400282: Cube.031
+    400284: Cube.032
+    400286: Cube.033
+    400288: Cube.158
+    400290: Cylinder.001
+    400292: Cylinder.002
+    400294: Cylinder.003
+    400296: Cylinder.004
+    400298: Cylinder.005
+    400300: Cylinder.006
+    400302: Cylinder.007
+    400304: Element_winterlego@Origin_A00
+    400306: Element_winterlego@Origin_A01
+    400308: Element_winterlego@Origin_A02
+    400310: Element_winterlego@Origin_A03
+    400312: Element_winterlego@Origin_A04
+    400314: Element_winterlego@Origin_A05
+    400316: Element_winterlego@Origin_A06
+    400318: Element_winterlego@Origin_A07
+    400320: Element_winterlego@Origin_A08
+    400322: Element_winterlego@Origin_A09
+    400324: Element_winterlego@Origin_B00
+    400326: Element_winterlego@Origin_B01
+    400328: Element_winterlego@Origin_B02
+    400330: Element_winterlego@Origin_B03
+    400332: Element_winterlego@Origin_B04
+    400334: Element_winterlego@Origin_B05
+    400336: Element_winterlego@Origin_B06
+    400338: Element_winterlego@Origin_B07
+    400340: Element_winterlego@Origin_B08
+    400342: Element_winterlego@Origin_C00
+    400344: Element_winterlego@Origin_C01
+    400346: Element_winterlego@Origin_C02
+    400348: Element_winterlego@Origin_C03
+    400350: Element_winterlego@Origin_C04
+    400352: Element_winterlego@Origin_C05
+    400354: Element_winterlego@Origin_C06
+    400356: Element_winterlego@Origin_C07
+    400358: Element_winterlego@Origin_C08
+    400360: lego window.000
+    400362: lego window.004
+    400364: Plane
+    400366: Plane.001
+    400368: //RootNode
+    2100000: lego orange
+    2100002: lego green2
+    2100004: collider
+    2100006: lego yellow
+    2100008: lego red
+    2100010: lego glass
+    2100012: lego white HIGH
+    2100014: lego white
+    2100016: lego szurke
+    2100018: lego black
+    2100020: lego green
+    2100022: lego dark blue
+    2100024: Material06.001
+    2100026: Material
+    2100028: lego pink
+    2100030: No Name
+    2300000: 00kiskerites.000
+    2300002: 00kiskerites.001
+    2300004: 00kiskerites.002
+    2300006: 00kiskerites.003
+    2300008: 00kiskerites.004
+    2300010: 00kiskerites.005
+    2300012: 00kiskerites.006
+    2300014: 00kiskerites.007
+    2300016: 00kiskerites.008
+    2300018: 00kiskerites.009
+    2300020: 00kiskerites.010
+    2300022: _Knob.000
+    2300024: _Knob.001
+    2300026: _Knob.002
+    2300028: _Knob.003
+    2300030: _Knob.004
+    2300032: _Knob.005
+    2300034: _Knob.006
+    2300036: _Knob.007
+    2300038: _Knob.008
+    2300040: _Knob.009
+    2300042: _Knob.033
+    2300044: Antenna 1 x 4 - Flat Top.005
+    2300046: Antenna 1 x 4 - Flat Top.015
+    2300048: Brick 2x2.000
+    2300050: Brick 2x2.001
+    2300052: Brick 2x2.002
+    2300054: Brick 2x2.003
+    2300056: Brick 2x2.004
+    2300058: Brick 2x2.005
+    2300060: Brick 2x2.006
+    2300062: Brick 2x2.007
+    2300064: Brick 2x2.008
+    2300066: Brick 2x2.009
+    2300068: Brick 2x2.010
+    2300070: Brick 2x2.011
+    2300072: Brick 2x2.012
+    2300074: Brick 2x2.013
+    2300076: Brick 2x2.014
+    2300078: Brick 2x2.015
+    2300080: Brick 2x2.016
+    2300082: Brick 2x2.017
+    2300084: Brick 2x2.018
+    2300086: Brick 2x2.019
+    2300088: Brick 2x2.020
+    2300090: Brick 2x2.021
+    2300092: Brick 2x2.022
+    2300094: Brick 2x2.023
+    2300096: Brick 2x2.024
+    2300098: Brick 2x2.025
+    2300100: Brick 2x2.026
+    2300102: Brick 2x2.027
+    2300104: Brick 2x2.028
+    2300106: Brick 2x2.029
+    2300108: Brick 2x2.030
+    2300110: Brick 2x2.031
+    2300112: Brick 2x2.032
+    2300114: Brick 2x2.060
+    2300116: Brick 2x2.063
+    2300118: Brick 2x2.067
+    2300120: Brick 2x2.068
+    2300122: Brick 2x2.099
+    2300124: Brick 2x2.101
+    2300126: Brick 2x2.124
+    2300128: Brick 2x2.128
+    2300130: Brick 2x4.000
+    2300132: Brick 2x4.001
+    2300134: Brick 2x4.002
+    2300136: Brick 2x4.003
+    2300138: Brick 2x4.004
+    2300140: Brick 2x4.005
+    2300142: Brick 2x4.006
+    2300144: Brick 2x4.007
+    2300146: Brick 2x4.008
+    2300148: Brick 2x4.009
+    2300150: Brick 2x4.010
+    2300152: Brick 2x4.011
+    2300154: Brick 2x4.037
+    2300156: Brick 2x4.039
+    2300158: Brick 2x4.079
+    2300160: Brick 2x4.093
+    2300162: Brick 2x4.103
+    2300164: Brick 2x4.123
+    2300166: Brick 2x4.137
+    2300168: Brick 2x4.141
+    2300170: Brick 2x4.147
+    2300172: Brick 2x4.149
+    2300174: Brick Round 1x1 Open Stud.000
+    2300176: Brick Round 1x1 Open Stud.001
+    2300178: Brick Round 1x1 Open Stud.002
+    2300180: Brick Round 1x1 Open Stud.003
+    2300182: Brick Round 1x1 Open Stud.004
+    2300184: Brick Round 1x1 Open Stud.005
+    2300186: Brick Round 1x1 Open Stud.006
+    2300188: Brick Round 1x1 Open Stud.007
+    2300190: Brick Round 1x1 Open Stud.008
+    2300192: Brick Round 1x1 Open Stud.009
+    2300194: Brick Round 1x1 Open Stud.010
+    2300196: Brick Round 1x1 Open Stud.011
+    2300198: Brick Round 1x1 Open Stud.012
+    2300200: Brick Round 1x1 Open Stud.013
+    2300202: Brick Round 1x1 Open Stud.014
+    2300204: Brick Round 1x1 Open Stud.015
+    2300206: Brick Round 1x1 Open Stud.016
+    2300208: Brick Round 1x1 Open Stud.017
+    2300210: Brick Round 1x1 Open Stud.018
+    2300212: Brick Round 1x1 Open Stud.021
+    2300214: Brick Round 1x1 Open Stud.022
+    2300216: Brick Round 1x1 Open Stud.023
+    2300218: Brick Round 1x1 Open Stud.024
+    2300220: Brick Round 1x1 Open Stud.025
+    2300222: Brick Round 1x1 Open Stud.026
+    2300224: Brick Round 1x1 Open Stud.027
+    2300226: Cube
+    2300228: Cube.002
+    2300230: Cube.004
+    2300232: Cube.005
+    2300234: Cube.006
+    2300236: Cube.007
+    2300238: Cube.008
+    2300240: Cube.009
+    2300242: Cube.010
+    2300244: Cube.012
+    2300246: Cube.013
+    2300248: Cube.014
+    2300250: Cube.015
+    2300252: Cube.016
+    2300254: Cube.017
+    2300256: Cube.018
+    2300258: Cube.019
+    2300260: Cube.020
+    2300262: Cube.021
+    2300264: Cube.022
+    2300266: Cube.023
+    2300268: Cube.024
+    2300270: Cube.025
+    2300272: Cube.026
+    2300274: Cube.027
+    2300276: Cube.028
+    2300278: Cube.029
+    2300280: Cube.030
+    2300282: Cube.031
+    2300284: Cube.032
+    2300286: Cube.033
+    2300288: Cube.158
+    2300290: Cylinder.001
+    2300292: Cylinder.002
+    2300294: Cylinder.003
+    2300296: Cylinder.004
+    2300298: Cylinder.005
+    2300300: Cylinder.006
+    2300302: Cylinder.007
+    2300304: Element_winterlego@Origin_A00
+    2300306: Element_winterlego@Origin_A01
+    2300308: Element_winterlego@Origin_A02
+    2300310: Element_winterlego@Origin_A03
+    2300312: Element_winterlego@Origin_A04
+    2300314: Element_winterlego@Origin_A05
+    2300316: Element_winterlego@Origin_A06
+    2300318: Element_winterlego@Origin_A07
+    2300320: Element_winterlego@Origin_A08
+    2300322: Element_winterlego@Origin_A09
+    2300324: Element_winterlego@Origin_B00
+    2300326: Element_winterlego@Origin_B01
+    2300328: Element_winterlego@Origin_B02
+    2300330: Element_winterlego@Origin_B03
+    2300332: Element_winterlego@Origin_B04
+    2300334: Element_winterlego@Origin_B05
+    2300336: Element_winterlego@Origin_B06
+    2300338: Element_winterlego@Origin_B07
+    2300340: Element_winterlego@Origin_B08
+    2300342: Element_winterlego@Origin_C00
+    2300344: Element_winterlego@Origin_C01
+    2300346: Element_winterlego@Origin_C02
+    2300348: Element_winterlego@Origin_C03
+    2300350: Element_winterlego@Origin_C04
+    2300352: Element_winterlego@Origin_C05
+    2300354: Element_winterlego@Origin_C06
+    2300356: Element_winterlego@Origin_C07
+    2300358: Element_winterlego@Origin_C08
+    2300360: lego window.000
+    2300362: lego window.004
+    2300364: Plane
+    2300366: Plane.001
+    3300000: 00kiskerites.000
+    3300002: 00kiskerites.001
+    3300004: 00kiskerites.002
+    3300006: 00kiskerites.003
+    3300008: 00kiskerites.004
+    3300010: 00kiskerites.005
+    3300012: 00kiskerites.006
+    3300014: 00kiskerites.007
+    3300016: 00kiskerites.008
+    3300018: 00kiskerites.009
+    3300020: 00kiskerites.010
+    3300022: _Knob.000
+    3300024: _Knob.001
+    3300026: _Knob.002
+    3300028: _Knob.003
+    3300030: _Knob.004
+    3300032: _Knob.005
+    3300034: _Knob.006
+    3300036: _Knob.007
+    3300038: _Knob.008
+    3300040: _Knob.009
+    3300042: _Knob.033
+    3300044: Antenna 1 x 4 - Flat Top.005
+    3300046: Antenna 1 x 4 - Flat Top.015
+    3300048: Brick 2x2.000
+    3300050: Brick 2x2.001
+    3300052: Brick 2x2.002
+    3300054: Brick 2x2.003
+    3300056: Brick 2x2.004
+    3300058: Brick 2x2.005
+    3300060: Brick 2x2.006
+    3300062: Brick 2x2.007
+    3300064: Brick 2x2.008
+    3300066: Brick 2x2.009
+    3300068: Brick 2x2.010
+    3300070: Brick 2x2.011
+    3300072: Brick 2x2.012
+    3300074: Brick 2x2.013
+    3300076: Brick 2x2.014
+    3300078: Brick 2x2.015
+    3300080: Brick 2x2.016
+    3300082: Brick 2x2.017
+    3300084: Brick 2x2.018
+    3300086: Brick 2x2.019
+    3300088: Brick 2x2.020
+    3300090: Brick 2x2.021
+    3300092: Brick 2x2.022
+    3300094: Brick 2x2.023
+    3300096: Brick 2x2.024
+    3300098: Brick 2x2.025
+    3300100: Brick 2x2.026
+    3300102: Brick 2x2.027
+    3300104: Brick 2x2.028
+    3300106: Brick 2x2.029
+    3300108: Brick 2x2.030
+    3300110: Brick 2x2.031
+    3300112: Brick 2x2.032
+    3300114: Brick 2x2.060
+    3300116: Brick 2x2.063
+    3300118: Brick 2x2.067
+    3300120: Brick 2x2.068
+    3300122: Brick 2x2.099
+    3300124: Brick 2x2.101
+    3300126: Brick 2x2.124
+    3300128: Brick 2x2.128
+    3300130: Brick 2x4.000
+    3300132: Brick 2x4.001
+    3300134: Brick 2x4.002
+    3300136: Brick 2x4.003
+    3300138: Brick 2x4.004
+    3300140: Brick 2x4.005
+    3300142: Brick 2x4.006
+    3300144: Brick 2x4.007
+    3300146: Brick 2x4.008
+    3300148: Brick 2x4.009
+    3300150: Brick 2x4.010
+    3300152: Brick 2x4.011
+    3300154: Brick 2x4.037
+    3300156: Brick 2x4.039
+    3300158: Brick 2x4.079
+    3300160: Brick 2x4.093
+    3300162: Brick 2x4.103
+    3300164: Brick 2x4.123
+    3300166: Brick 2x4.137
+    3300168: Brick 2x4.141
+    3300170: Brick 2x4.147
+    3300172: Brick 2x4.149
+    3300174: Brick Round 1x1 Open Stud.000
+    3300176: Brick Round 1x1 Open Stud.001
+    3300178: Brick Round 1x1 Open Stud.002
+    3300180: Brick Round 1x1 Open Stud.003
+    3300182: Brick Round 1x1 Open Stud.004
+    3300184: Brick Round 1x1 Open Stud.005
+    3300186: Brick Round 1x1 Open Stud.006
+    3300188: Brick Round 1x1 Open Stud.007
+    3300190: Brick Round 1x1 Open Stud.008
+    3300192: Brick Round 1x1 Open Stud.009
+    3300194: Brick Round 1x1 Open Stud.010
+    3300196: Brick Round 1x1 Open Stud.011
+    3300198: Brick Round 1x1 Open Stud.012
+    3300200: Brick Round 1x1 Open Stud.013
+    3300202: Brick Round 1x1 Open Stud.014
+    3300204: Brick Round 1x1 Open Stud.015
+    3300206: Brick Round 1x1 Open Stud.016
+    3300208: Brick Round 1x1 Open Stud.017
+    3300210: Brick Round 1x1 Open Stud.018
+    3300212: Brick Round 1x1 Open Stud.021
+    3300214: Brick Round 1x1 Open Stud.022
+    3300216: Brick Round 1x1 Open Stud.023
+    3300218: Brick Round 1x1 Open Stud.024
+    3300220: Brick Round 1x1 Open Stud.025
+    3300222: Brick Round 1x1 Open Stud.026
+    3300224: Brick Round 1x1 Open Stud.027
+    3300226: Cube
+    3300228: Cube.002
+    3300230: Cube.004
+    3300232: Cube.005
+    3300234: Cube.006
+    3300236: Cube.007
+    3300238: Cube.008
+    3300240: Cube.009
+    3300242: Cube.010
+    3300244: Cube.012
+    3300246: Cube.013
+    3300248: Cube.014
+    3300250: Cube.015
+    3300252: Cube.016
+    3300254: Cube.017
+    3300256: Cube.018
+    3300258: Cube.019
+    3300260: Cube.020
+    3300262: Cube.021
+    3300264: Cube.022
+    3300266: Cube.023
+    3300268: Cube.024
+    3300270: Cube.025
+    3300272: Cube.026
+    3300274: Cube.027
+    3300276: Cube.028
+    3300278: Cube.029
+    3300280: Cube.030
+    3300282: Cube.031
+    3300284: Cube.032
+    3300286: Cube.033
+    3300288: Cube.158
+    3300290: Cylinder.001
+    3300292: Cylinder.002
+    3300294: Cylinder.003
+    3300296: Cylinder.004
+    3300298: Cylinder.005
+    3300300: Cylinder.006
+    3300302: Cylinder.007
+    3300304: Element_winterlego@Origin_A00
+    3300306: Element_winterlego@Origin_A01
+    3300308: Element_winterlego@Origin_A02
+    3300310: Element_winterlego@Origin_A03
+    3300312: Element_winterlego@Origin_A04
+    3300314: Element_winterlego@Origin_A05
+    3300316: Element_winterlego@Origin_A06
+    3300318: Element_winterlego@Origin_A07
+    3300320: Element_winterlego@Origin_A08
+    3300322: Element_winterlego@Origin_A09
+    3300324: Element_winterlego@Origin_B00
+    3300326: Element_winterlego@Origin_B01
+    3300328: Element_winterlego@Origin_B02
+    3300330: Element_winterlego@Origin_B03
+    3300332: Element_winterlego@Origin_B04
+    3300334: Element_winterlego@Origin_B05
+    3300336: Element_winterlego@Origin_B06
+    3300338: Element_winterlego@Origin_B07
+    3300340: Element_winterlego@Origin_B08
+    3300342: Element_winterlego@Origin_C00
+    3300344: Element_winterlego@Origin_C01
+    3300346: Element_winterlego@Origin_C02
+    3300348: Element_winterlego@Origin_C03
+    3300350: Element_winterlego@Origin_C04
+    3300352: Element_winterlego@Origin_C05
+    3300354: Element_winterlego@Origin_C06
+    3300356: Element_winterlego@Origin_C07
+    3300358: Element_winterlego@Origin_C08
+    3300360: lego window.000
+    3300362: lego window.004
+    3300364: Plane
+    3300366: Plane.001
+    4300000: 00kiskerites.001
+    4300002: Cube.007
+    4300004: Brick 2x2.099
+    4300006: Brick 2x4.147
+    4300008: Element_winterlego@Origin_C00
+    4300010: Cube.158
+    4300012: Brick 2x4.001
+    4300014: Cube.016
+    4300016: Element_winterlego@Origin_C01
+    4300018: Brick 2x2.067
+    4300020: Brick 2x4.007
+    4300022: Cube.004
+    4300024: Element_winterlego@Origin_C02
+    4300026: lego window.004
+    4300028: Brick 2x4.004
+    4300030: 00kiskerites.003
+    4300032: Cube.010
+    4300034: Element_winterlego@Origin_A00
+    4300036: Brick 2x4.123
+    4300038: Brick 2x4.039
+    4300040: Brick 2x2.001
+    4300042: Brick Round 1x1 Open Stud.007
+    4300044: Cube.012
+    4300046: Element_winterlego@Origin_A01
+    4300048: Brick 2x2.063
+    4300050: Brick Round 1x1 Open Stud.006
+    4300052: Brick 2x2.031
+    4300054: Cube.013
+    4300056: Cylinder.004
+    4300058: Element_winterlego@Origin_B00
+    4300060: Brick 2x2.060
+    4300062: Brick 2x4.008
+    4300064: Cube.006
+    4300066: Brick 2x4.011
+    4300068: Brick 2x2.000
+    4300070: Cube.014
+    4300072: Element_winterlego@Origin_B01
+    4300074: Brick 2x2.018
+    4300076: Brick 2x4.037
+    4300078: Brick 2x2.032
+    4300080: Cube.015
+    4300082: Cylinder.003
+    4300084: Element_winterlego@Origin_C03
+    4300086: Brick 2x4.141
+    4300088: Brick 2x4.000
+    4300090: lego window.000
+    4300092: 00kiskerites.004
+    4300094: Cube
+    4300096: Element_winterlego@Origin_A02
+    4300098: Brick 2x2.128
+    4300100: Brick 2x2.006
+    4300102: Brick Round 1x1 Open Stud.002
+    4300104: Brick Round 1x1 Open Stud.018
+    4300106: Brick Round 1x1 Open Stud.015
+    4300108: Brick Round 1x1 Open Stud.016
+    4300110: Cube.017
+    4300112: Cylinder.002
+    4300114: Element_winterlego@Origin_A03
+    4300116: Brick Round 1x1 Open Stud.025
+    4300118: Brick Round 1x1 Open Stud.000
+    4300120: Brick 2x2.008
+    4300122: Brick Round 1x1 Open Stud.017
+    4300124: Cube.018
+    4300126: Cylinder.005
+    4300128: Cylinder.007
+    4300130: Plane.001
+    4300132: Element_winterlego@Origin_A04
+    4300134: Brick 2x4.005
+    4300136: Brick Round 1x1 Open Stud.003
+    4300138: Brick 2x2.009
+    4300140: Brick Round 1x1 Open Stud.021
+    4300142: Cube.022
+    4300144: Plane
+    4300146: Element_winterlego@Origin_A09
+    4300148: Element_winterlego@Origin_A05
+    4300150: Brick 2x2.003
+    4300152: Brick Round 1x1 Open Stud.004
+    4300154: Brick 2x2.010
+    4300156: Brick Round 1x1 Open Stud.022
+    4300158: Brick Round 1x1 Open Stud.023
+    4300160: Cube.023
+    4300162: Element_winterlego@Origin_A06
+    4300164: Antenna 1 x 4 - Flat Top.015
+    4300166: Brick Round 1x1 Open Stud.005
+    4300168: Brick 2x2.011
+    4300170: Brick Round 1x1 Open Stud.024
+    4300172: Brick Round 1x1 Open Stud.026
+    4300174: Brick Round 1x1 Open Stud.027
+    4300176: Cube.027
+    4300178: Element_winterlego@Origin_B02
+    4300180: Brick 2x2.101
+    4300182: Brick 2x2.007
+    4300184: Brick 2x2.017
+    4300186: Brick 2x2.025
+    4300188: Brick Round 1x1 Open Stud.013
+    4300190: 00kiskerites.005
+    4300192: Brick 2x2.020
+    4300194: Brick 2x2.021
+    4300196: _Knob.009
+    4300198: Cube.019
+    4300200: Cylinder.006
+    4300202: Element_winterlego@Origin_B03
+    4300204: _Knob.033
+    4300206: Brick 2x2.026
+    4300208: Brick 2x2.002
+    4300210: Brick 2x2.022
+    4300212: Brick 2x2.023
+    4300214: Brick Round 1x1 Open Stud.010
+    4300216: Brick Round 1x1 Open Stud.011
+    4300218: 00kiskerites.006
+    4300220: _Knob.000
+    4300222: _Knob.001
+    4300224: _Knob.002
+    4300226: _Knob.003
+    4300228: _Knob.004
+    4300230: _Knob.005
+    4300232: _Knob.006
+    4300234: _Knob.007
+    4300236: _Knob.008
+    4300238: Cube.020
+    4300240: Cylinder.001
+    4300242: Element_winterlego@Origin_B04
+    4300244: Brick 2x4.103
+    4300246: Brick 2x2.013
+    4300248: Brick 2x2.027
+    4300250: 00kiskerites.007
+    4300252: Cube.024
+    4300254: Element_winterlego@Origin_B05
+    4300256: Brick 2x4.079
+    4300258: Brick 2x2.014
+    4300260: Brick 2x2.028
+    4300262: Brick Round 1x1 Open Stud.001
+    4300264: 00kiskerites.008
+    4300266: Cube.025
+    4300268: Element_winterlego@Origin_B06
+    4300270: Antenna 1 x 4 - Flat Top.005
+    4300272: Brick 2x2.015
+    4300274: Brick 2x2.029
+    4300276: Brick Round 1x1 Open Stud.012
+    4300278: Brick Round 1x1 Open Stud.014
+    4300280: 00kiskerites.009
+    4300282: Cube.028
+    4300284: Element_winterlego@Origin_C04
+    4300286: Brick 2x4.002
+    4300288: Brick 2x2.016
+    4300290: Cube.021
+    4300292: Element_winterlego@Origin_C05
+    4300294: Brick 2x4.003
+    4300296: Brick 2x2.024
+    4300298: Cube.008
+    4300300: Element_winterlego@Origin_C06
+    4300302: Brick 2x4.093
+    4300304: Cube.026
+    4300306: Element_winterlego@Origin_C07
+    4300308: Brick 2x4.149
+    4300310: Cube.009
+    4300312: Element_winterlego@Origin_A07
+    4300314: Brick 2x2.004
+    4300316: Brick Round 1x1 Open Stud.009
+    4300318: Brick 2x2.012
+    4300320: Cube.029
+    4300322: Element_winterlego@Origin_A08
+    4300324: Brick Round 1x1 Open Stud.008
+    4300326: Brick 2x2.005
+    4300328: 00kiskerites.002
+    4300330: Cube.030
+    4300332: Element_winterlego@Origin_B07
+    4300334: Brick 2x2.019
+    4300336: Brick 2x2.124
+    4300338: Cube.002
+    4300340: Brick 2x4.009
+    4300342: 00kiskerites.010
+    4300344: Cube.031
+    4300346: Element_winterlego@Origin_B08
+    4300348: Brick 2x2.030
+    4300350: Brick 2x4.137
+    4300352: Brick 2x4.010
+    4300354: Cube.005
+    4300356: 00kiskerites.000
+    4300358: Cube.032
+    4300360: Element_winterlego@Origin_C08
+    4300362: Brick 2x2.068
+    4300364: Brick 2x4.006
+    4300366: Cube.033
+    2186277476908879412: ImportLogs
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material
+    second: {fileID: 2100000, guid: 4586697f865a0984c80db062131ef58e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material06.001
+    second: {fileID: 2100000, guid: 930da7b7496804b4fb344ee7294f6ebc, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: collider
+    second: {fileID: 2100000, guid: 5b4394237ba110c4a9e58f8d77ea0bbe, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: lego black
+    second: {fileID: 2100000, guid: d34e0689683818a48805a3009f681261, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: lego dark blue
+    second: {fileID: 2100000, guid: 09a5ac1d978e51d40bea2639a6a24f78, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: lego glass
+    second: {fileID: 2100000, guid: d17729fdd80fd1b4a94729b1ec772778, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: lego green
+    second: {fileID: 2100000, guid: e5aee57e5ed077440aa7552093f05148, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: lego green2
+    second: {fileID: 2100000, guid: 58afc9bae117e6d409f7f5b448ec4360, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: lego orange
+    second: {fileID: 2100000, guid: 207542f13b782a8409c083472f8d82ed, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: lego pink
+    second: {fileID: 2100000, guid: 189296d9eff26bb4ebb4a1273e90b229, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: lego red
+    second: {fileID: 2100000, guid: caa4fffc674b08545805d7a16488b9d3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: lego szurke
+    second: {fileID: 2100000, guid: 273f769101e15e64ea32d08eaef93e11, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: lego white
+    second: {fileID: 2100000, guid: 4fcde48e6e73e534aae7516ae0405d49, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: lego white HIGH
+    second: {fileID: 2100000, guid: 232cf323949021b449a22af0780b38b1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: lego yellow
+    second: {fileID: 2100000, guid: 6fe5b2b710a6e5742a5ad83ec12ddbcf, type: 2}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

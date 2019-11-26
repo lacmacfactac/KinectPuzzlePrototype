@@ -8,7 +8,8 @@ public class GameLogic : MonoBehaviour
     public bool correctSolution = false;
     public int solutionIndex = -1;
     GameObject[] solutions;
-    GameObject[] puzzleSockets;
+    List<GameObject> puzzleSockets;
+    // GameObject[] puzzleSockets;
     GameObject puzzle;
     SolutionHandler solutionHandler;
     public bool waitingForReset = false;
@@ -27,7 +28,17 @@ public class GameLogic : MonoBehaviour
         realIdleTime = averageAllowedIdleTime;
         //solutionHandler = GameObject.FindObjectOfType<SolutionHandler>();
         //solutions = GameObject.FindGameObjectsWithTag("Complete");
-        puzzleSockets = GameObject.FindGameObjectsWithTag("Origin");
+        puzzleSockets = new List<GameObject>();
+        Transform[] allChildren = gameObject.GetComponentsInChildren<Transform>();
+
+        foreach (Transform item in allChildren) {
+            if (item.CompareTag("Origin"))
+            {
+                puzzleSockets.Add(item.gameObject);
+            }
+        }
+
+        //puzzleSockets = GameObject.FindGameObjectsWithTag("Origin");
         puzzle = GameObject.Find("Puzzle");
 
 
@@ -53,6 +64,7 @@ public class GameLogic : MonoBehaviour
             Scramble();
         }
         */
+        
 
         if (!waitingForReset)
         {
@@ -64,9 +76,9 @@ public class GameLogic : MonoBehaviour
 
             correctSolution = true;
             float maxIdleTime = 0;
-            for (int i = 0; i < puzzleSockets.Length; i++)
+            for (int i = 0; i < puzzleSockets.Count; i++)
             {
-                int next = (i + 1) % puzzleSockets.Length;
+                int next = (i + 1) % puzzleSockets.Count;
                 if (
                     puzzleSockets[i].GetComponent<Mover>().GetState() != -1 &&
                     puzzleSockets[i].GetComponent<Mover>().GetState() != puzzleSockets[next].GetComponent<Mover>().GetState()
@@ -79,7 +91,7 @@ public class GameLogic : MonoBehaviour
             if (robotEnabled && Time.time-lastPerformedRobot > realIdleTime) {
                 lastPerformedRobot = Time.time;
                 realIdleTime = Mathf.Lerp(averageAllowedIdleTime / 2, averageAllowedIdleTime * 2, Random.value);
-                puzzleSockets[(int)Random.Range(0, puzzleSockets.Length - 1)].GetComponent<Mover>().SetToRandom();
+                puzzleSockets[(int)Random.Range(0, puzzleSockets.Count - 1)].GetComponent<Mover>().SetToRandom();
             }
 
             if (correctSolution)
@@ -101,7 +113,7 @@ public class GameLogic : MonoBehaviour
     public void Scramble()
     {
         Debug.Log("Scrambling");
-        for (int i = 0; i < puzzleSockets.Length; i++)
+        for (int i = 0; i < puzzleSockets.Count; i++)
         {
             StartCoroutine(ScramblingRoutine(puzzleSockets[i], i * 0.15f));
             runningCoroutines += 1;

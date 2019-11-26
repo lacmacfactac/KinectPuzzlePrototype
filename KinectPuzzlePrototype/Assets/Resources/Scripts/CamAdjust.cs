@@ -209,6 +209,9 @@ public class CamAdjust : MonoBehaviour
                 "[SPACE]\n" +
                 "Scramble now\n" +
                 "\n" +
+                "[M]\n" +
+                "Easy/Normal mode\n" +
+                "\n" +
                 "[ESC]\n" +
                 "Quit" + 
                 "\n" + 

@@ -92,9 +92,11 @@ public class Tagger : MonoBehaviour
 
         animator = Resources.Load("Animations/Cube") as RuntimeAnimatorController;
 
-        foreach(GameObject g in GameObject.FindGameObjectsWithTag("Origin"))
+        foreach (Transform item in allImported)
         {
-            Mover m = g.AddComponent<Mover>();
+            if (item.CompareTag("Origin")) {
+                GameObject g = item.gameObject;
+                Mover m = g.AddComponent<Mover>();
 
             GameObject colliderMeshSource = GameObject.Find(g.GetComponent<ObjectCategory>().parentName);
             /*
@@ -114,51 +116,63 @@ public class Tagger : MonoBehaviour
             g.AddComponent<Animator>().runtimeAnimatorController = animator;
             g.layer = LayerMask.NameToLayer("KinectTouchable");
         }
+        }
 
-        foreach (GameObject g in GameObject.FindGameObjectsWithTag("Element"))
+        foreach (Transform item in allImported)
         {
-            if (g.GetComponent<MeshRenderer>() != null)
-            {
-                g.GetComponent<MeshRenderer>().enabled = false;
+            if (item.CompareTag("Element")) {
+                GameObject g = item.gameObject;
+                if (g.GetComponent<MeshRenderer>() != null)
+                {
+                    g.GetComponent<MeshRenderer>().enabled = false;
+                }
             }
         }
 
-        foreach (GameObject g in GameObject.FindGameObjectsWithTag("Origin"))
+        foreach (Transform item in allImported)
         {
-            if (g.GetComponent<MeshRenderer>() != null)
+            if (item.CompareTag("Origin"))
             {
-                g.GetComponent<MeshRenderer>().enabled = false;
+                GameObject g = item.gameObject;
+                if (g.GetComponent<MeshRenderer>() != null)
+                {
+                    g.GetComponent<MeshRenderer>().enabled = false;
+                }
             }
         }
 
         AudioClip ping = Resources.Load("Audio/Ping") as AudioClip;
         AudioClip drag = Resources.Load("Audio/Drag") as AudioClip;
 
-        foreach (GameObject g in GameObject.FindGameObjectsWithTag("Slot"))
+        foreach (Transform item in allImported)
         {
 
-            Debug.Log(g.name + " is a slot");
-            Mover m = g.GetComponentInChildren<Mover>();
-            GameObject pingSourceObject = new GameObject("Ping_audio_source");
-            pingSourceObject.transform.position = g.transform.position;
-            pingSourceObject.transform.parent = g.transform;
-            AudioSource pingSource = pingSourceObject.AddComponent<AudioSource>();
-            pingSource.loop = false;
-            pingSource.playOnAwake = false;
-            pingSource.clip = ping;
-            m.pingSource = pingSource;
-
-            GameObject dragSourceObject = new GameObject("Drag_audio_source");
-            dragSourceObject.transform.position = g.transform.position;
-            dragSourceObject.transform.parent = g.transform;
-            AudioSource dragSource = dragSourceObject.AddComponent<AudioSource>();
-            dragSource.loop = true;
-            dragSource.playOnAwake = true;
-            dragSource.clip = drag;
-            m.dragSource = dragSource;
-            if (g.GetComponent<MeshRenderer>() != null)
+            if (item.CompareTag("Slot"))
             {
-                g.GetComponent<MeshRenderer>().enabled = false;
+                GameObject g = item.gameObject;
+                Debug.Log(g.name + " is a slot");
+                Mover m = g.GetComponentInChildren<Mover>();
+                GameObject pingSourceObject = new GameObject("Ping_audio_source");
+                pingSourceObject.transform.position = g.transform.position;
+                pingSourceObject.transform.parent = g.transform;
+                AudioSource pingSource = pingSourceObject.AddComponent<AudioSource>();
+                pingSource.loop = false;
+                pingSource.playOnAwake = false;
+                pingSource.clip = ping;
+                m.pingSource = pingSource;
+
+                GameObject dragSourceObject = new GameObject("Drag_audio_source");
+                dragSourceObject.transform.position = g.transform.position;
+                dragSourceObject.transform.parent = g.transform;
+                AudioSource dragSource = dragSourceObject.AddComponent<AudioSource>();
+                dragSource.loop = true;
+                dragSource.playOnAwake = true;
+                dragSource.clip = drag;
+                m.dragSource = dragSource;
+                if (g.GetComponent<MeshRenderer>() != null)
+                {
+                    g.GetComponent<MeshRenderer>().enabled = false;
+                }
             }
         }
         
