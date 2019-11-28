@@ -44,6 +44,7 @@ public class GameLogic : MonoBehaviour
 
         waitingForReset = true;
         Scramble();
+        SleepRobot(gameObject);
     }
 
     // Update is called once per frame
@@ -148,7 +149,7 @@ public class GameLogic : MonoBehaviour
     public void SleepRobot(GameObject caller)
     {
         Debug.Log("Robot put to sleep by " + caller.name);
-        SleepRobot(5);
+        SleepRobot(15);
 
     }
     public void SleepRobot(float delay)

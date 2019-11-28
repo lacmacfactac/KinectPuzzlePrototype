@@ -141,6 +141,7 @@ public class HandStateTracker : MonoBehaviour
                 moverScript = hit.transform.GetComponent<Mover>();
                 moverScript.Grab(gameObject);
                 startPos = screenPoint;
+                gameLogic.SleepRobot(gameObject);
             }
         }
         if (releaseFlag)
@@ -152,6 +153,7 @@ public class HandStateTracker : MonoBehaviour
                 moverScript.Release();
                 grabbedObject = null;
                 moverScript = null;
+                gameLogic.SleepRobot(gameObject);
             }
         }
 
