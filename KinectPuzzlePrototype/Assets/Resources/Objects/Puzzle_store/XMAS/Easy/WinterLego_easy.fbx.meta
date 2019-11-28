@@ -170,6 +170,7 @@ ModelImporter:
     100328: Plane
     100330: Plane.001
     100332: //RootNode
+    100334: Santa's hat
     400000: 00kiskerites.000
     400002: 00kiskerites.001
     400004: 00kiskerites.002
@@ -337,6 +338,7 @@ ModelImporter:
     400328: Plane
     400330: Plane.001
     400332: //RootNode
+    400334: Santa's hat
     2100000: No Name
     2100002: lego yellow
     2100004: lego dark blue
@@ -518,6 +520,7 @@ ModelImporter:
     2300326: lego window.004
     2300328: Plane
     2300330: Plane.001
+    2300332: Santa's hat
     3300000: 00kiskerites.000
     3300002: 00kiskerites.001
     3300004: 00kiskerites.002
@@ -684,6 +687,7 @@ ModelImporter:
     3300326: lego window.004
     3300328: Plane
     3300330: Plane.001
+    3300332: Santa's hat
     4300000: 00kiskerites.001
     4300002: Brick 2x2.099
     4300004: Brick 2x4.147
@@ -850,6 +854,7 @@ ModelImporter:
     4300326: Cube.030
     4300328: Cube.032
     4300330: Cube.004
+    4300332: Santa's hat
     2186277476908879412: ImportLogs
   externalObjects:
   - first:
