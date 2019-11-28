@@ -149,7 +149,7 @@ public class GameLogic : MonoBehaviour
     public void SleepRobot(GameObject caller)
     {
         Debug.Log("Robot put to sleep by " + caller.name);
-        SleepRobot(15);
+        SleepRobot(30);
 
     }
     public void SleepRobot(float delay)
